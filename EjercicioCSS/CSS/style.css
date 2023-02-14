@@ -1,0 +1,14 @@
+h1 {
+  color: green;
+}
+p {
+  color: blue;
+  font-size: xx-large;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+li {
+  list-style: none;
+  list-style: square outside;
+}

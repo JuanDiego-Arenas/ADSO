@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Righteous&family=Roboto+Mono:ital,wght@0,100;0,200;0,400;0,600;0,700;1,100&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto+Mono:ital,wght@0,100;0,200;0,400;0,600;0,700;1,100&display=swap');
 
 * {
     box-sizing: border-box;
-    font-family: "Roboto Mono";
+    font-family: 'Roboto Mono';
     margin: 0;
     padding: 0;
 }
@@ -12,7 +12,7 @@ html {
 }
 
 
-/* Menu */
+/*================ Menu ================*/
 .container-header {
     background: #1e2326;
     position: fixed;
@@ -66,14 +66,12 @@ html {
 }
 
 
-/* Section Inicio */
+/*================ Section Inicio ================*/
 .inicio {
-    background: linear-gradient(
-            to top,
+    background: linear-gradient(to top,
             rgba(30, 35, 38, 0.9),
-            rgba(30, 35, 38, 0.2)
-        ),
-        url("../img/fondo.jpg") no-repeat center center;
+            rgba(30, 35, 38, 0.2)),
+        url('../img/fondo.jpg') no-repeat center center;
     background-size: cover;
     height: 70vw;
     color: #fff;
@@ -102,7 +100,7 @@ html {
 .inicio .container-banner h1 {
     margin-top: 30px;
     font-size: 40px;
-    font-family: "Righteous";
+    font-family: 'Righteous';
 }
 
 .inicio .container-banner h2 {
@@ -129,7 +127,7 @@ html {
 }
 
 
-/* Section Sobre Mi */
+/*================ Section Sobre Mi ================*/
 .sobremi {
     background-color: #1e2326;
     color: #fff;
@@ -143,7 +141,7 @@ html {
 
 .sobremi h2 {
     font-size: 48px;
-    font-family: "Righteous";
+    font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
 }
@@ -169,7 +167,7 @@ html {
 
 .sobremi .fila .col h3 {
     font-size: 28px;
-    font-family: "Righteous";
+    font-family: 'Righteous';
     margin-bottom: 25px;
 }
 
@@ -251,7 +249,7 @@ html {
 }
 
 
-/* Section Skills */
+/*================ Section Skills ================*/
 .skills {
     background-color: #252a2e;
     color: #fff;
@@ -265,7 +263,7 @@ html {
 
 .skills h2 {
     font-size: 48px;
-    font-family: "Righteous";
+    font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
 }
@@ -281,11 +279,11 @@ html {
 
 .skills .fila .col h3 {
     font-size: 28px;
-    font-family: "Righteous";
+    font-family: 'Righteous';
     margin: 25px;
 }
 
-.skills .skill > span {
+.skills .skill>span {
     font-weight: bold;
     display: block;
 }
@@ -319,17 +317,20 @@ html {
     font-size: 14px;
 }
 
-
-/* Aminación de la clase Skills js */
+/* Animación de la clase Skills js */
 .skills .skill .javascript {
     width: 0%;
     animation: 2s javascript forwards;
 }
 
 @keyframes javascript {
-    0% {width: 0%;}
+    0% {
+        width: 0%;
+    }
 
-    100% {width: 70%;}
+    100% {
+        width: 70%;
+    }
 }
 
 .skills .skill .node {
@@ -338,9 +339,13 @@ html {
 }
 
 @keyframes node {
-    0% { width: 0%;}
+    0% {
+        width: 0%;
+    }
 
-    100% { width: 50%;}
+    100% {
+        width: 50%;
+    }
 }
 
 .skills .skill .mongodb {
@@ -349,9 +354,13 @@ html {
 }
 
 @keyframes mongodb {
-    0% {width: 0%;}
+    0% {
+        width: 0%;
+    }
 
-    100% {width: 60%;}
+    100% {
+        width: 60%;
+    }
 }
 
 .skills .skill .git {
@@ -360,9 +369,13 @@ html {
 }
 
 @keyframes git {
-    0% {width: 0%;}
+    0% {
+        width: 0%;
+    }
 
-    100% {width: 80%;}
+    100% {
+        width: 80%;
+    }
 }
 
 .skills .skill .htmlcss {
@@ -371,9 +384,13 @@ html {
 }
 
 @keyframes htmlcss {
-    0% {width: 0%;}
+    0% {
+        width: 0%;
+    }
 
-    100% {width: 75%;}
+    100% {
+        width: 75%;
+    }
 }
 
 .skills .skill .react {
@@ -382,22 +399,29 @@ html {
 }
 
 @keyframes react {
-    0% {width: 0%;}
+    0% {
+        width: 0%;
+    }
 
-    100% {width: 45%;}
+    100% {
+        width: 45%;
+    }
 }
 
-
-/* Aminación de la clase Profesional Skills js */
-.skills .skill .comunication {
+/* Animación de la clase Profesional Skills js */
+.skills .skill .communication {
     width: 0%;
-    animation: 2s comunication forwards;
+    animation: 2s communication forwards;
 }
 
-@keyframes comunication {
-    0% {width: 0%;}
+@keyframes communication {
+    0% {
+        width: 0%;
+    }
 
-    100% {width: 80%;}
+    100% {
+        width: 80%;
+    }
 }
 
 .skills .skill .team {
@@ -406,9 +430,13 @@ html {
 }
 
 @keyframes team {
-    0% { width: 0%;}
+    0% {
+        width: 0%;
+    }
 
-    100% { width: 90%;}
+    100% {
+        width: 90%;
+    }
 }
 
 .skills .skill .creative {
@@ -417,9 +445,13 @@ html {
 }
 
 @keyframes creative {
-    0% {width: 0%;}
+    0% {
+        width: 0%;
+    }
 
-    100% {width: 90%;}
+    100% {
+        width: 90%;
+    }
 }
 
 .skills .skill .dedication {
@@ -428,9 +460,13 @@ html {
 }
 
 @keyframes dedication {
-    0% {width: 0%;}
+    0% {
+        width: 0%;
+    }
 
-    100% {width: 98%;}
+    100% {
+        width: 98%;
+    }
 }
 
 .skills .skill .htmlcss {
@@ -439,9 +475,13 @@ html {
 }
 
 @keyframes htmlcss {
-    0% {width: 0%;}
+    0% {
+        width: 0%;
+    }
 
-    100% {width: 75%;}
+    100% {
+        width: 75%;
+    }
 }
 
 .skills .skill .project {
@@ -450,13 +490,17 @@ html {
 }
 
 @keyframes project {
-    0% {width: 0%;}
+    0% {
+        width: 0%;
+    }
 
-    100% {width: 60%;}
+    100% {
+        width: 60%;
+    }
 }
 
 
-/* Section Curriculum */
+/*================ Section Curriculum ================*/
 .curriculum {
     background-color: #1e2326;
     color: #fff;
@@ -470,11 +514,339 @@ html {
 
 .curriculum h2 {
     font-size: 48px;
-    font-family: "Righteous";
+    font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
 }
 
 .curriculum .fila {
     display: flex;
+}
+
+.curriculum .fila .col {
+    width: 49%;
+    padding: 0 20px;
+}
+
+.curriculum .fila .col h3 {
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+
+.curriculum .fila .izquierda {
+    border-right: 2px solid #252a2e;
+}
+
+.curriculum .fila .derecha {
+    border-left: 2px solid #252a2e;
+}
+
+/* Aplicamos estilo a item: */
+.curriculum .fila .item {
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: #252a2e;
+    position: relative;
+}
+
+.curriculum .fila .item h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.curriculum .fila .item .casa {
+    color: #1cb698;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+}
+
+.curriculum .fila .item .fecha {
+    display: block;
+    color: #1cb698;
+    margin-bottom: 10px;
+}
+
+.curriculum .fila .item p {
+    line-height: 24px;
+}
+
+/* Aplicamos el estilo a fila izq y der */
+.curriculum .fila .izq {
+    border-right: 2px solid #1cb698;
+    margin-right: 20px;
+}
+
+.curriculum .fila .der {
+    border-left: 2px solid #1cb698;
+    margin-left: 20px;
+}
+
+/* Continuamos añadiendo estilo a los conectores y círculos */
+.curriculum .fila .item .conector-i {
+    height: 2px;
+    background-color: #1cb698;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    right: -47px;
+    z-index: 5;
+}
+
+.curriculum .fila .item .conector-i .circulo-i {
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #1cb698;
+    float: right;
+    position: relative;
+    bottom: 4px;
+}
+
+.curriculum .fila .item .conector-d {
+    height: 2px;
+    background-color: #1cb698;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    left: -47px;
+    z-index: 5;
+}
+
+.curriculum .fila .item .conector-d .circulo-d {
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #1cb698;
+    float: left;
+    position: relative;
+    bottom: 4px;
+}
+
+/* Aplicaremos un ajuste a .curriculum .fila a través del justify-content */
+.curriculum .fila {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*================ Section Portfolio ================*/
+.portfolio {
+    background-color: #252a2e;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.portfolio .container-section {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.portfolio h2 {
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Estilos de la galería */
+.portfolio .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio .galeria .proyecto {
+    position: relative;
+    max-width: 340px;
+    height: fit-content;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.portfolio .galeria img {
+    width: 100%;
+    display: block;
+}
+
+/* Estilo del overlay */
+.portfolio .galeria .proyecto .overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(rgba(28, 182, 152, .8), rgba(28, 182, 152, .7));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: .5s;
+    font-size: 18px;
+    letter-spacing: 3px;
+    opacity: 0;
+}
+
+/* Estilo h3 y hover */
+.portfolio .galeria .proyecto h3 {
+    margin-bottom: 20px;
+    transition: .5s;
+}
+
+.portfolio .galeria .proyecto .overlay:hover {
+    opacity: 1;
+}
+
+.portfolio .galeria .proyecto .overlay:hover h3 {
+    margin-bottom: 0px;
+}
+
+
+/*================ Section Contacto ================*/
+.contacto {
+    background-image: url('../img/contact_bg.png');
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.contacto .container-section {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.contacto h2 {
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contacto .fila {
+    display: flex;
+}
+
+.contacto .col {
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+
+/* Estilos input y textarea */
+.contacto .col input,
+.contacto .col textarea {
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #252a2e;
+    color: #fff;
+    font-size: 17px;
+}
+
+/* Estilos Button */
+.contacto button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+/* overlay & hover */
+.contacto button .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1cb698;
+    transition: 1s;
+    z-index: -1;
+}
+
+.contacto button:hover .overlay {
+    width: 100%;
+}
+
+/* Estilos img, .info, ul, li, i */
+.contacto .col img {
+    width: 100%;
+}
+
+.contacto .col .info {
+    position: absolute;
+    top: 40%;
+    background-color: #252a2e;
+    padding: 20px;
+    width: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contacto .col .info ul {
+    list-style: none;
+}
+
+.contacto .col .info ul li {
+    margin-bottom: 20px;
+}
+
+.contacto .col .info ul li i {
+    color: #1cb698;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+
+/*================ Footer ================*/
+footer {
+    background-color: #252a2e;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+footer .redes {
+    margin-bottom: 20px
+}
+
+footer .redes a {
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transform: 3s;
+}
+
+footer .arriba {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #1cb698;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
 }

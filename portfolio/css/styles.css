@@ -14,12 +14,14 @@ html {
 
 /*================ Menu ================*/
 .container-header {
-    background: #1e2326;
+    background-color: rgba(48, 48, 48, .99);
+    transition: background-color .5s ease; /* transición suave */
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 99;
+    /* background-color: white;color por defecto */
 }
 
 .container-header header {
@@ -34,7 +36,7 @@ html {
 .container-header header .logo a {
     font-family: Righteous;
     font-size: 36px;
-    color: #1cb698;
+    color: #3E923A;
     text-decoration: none;
 }
 
@@ -53,11 +55,11 @@ html {
 }
 
 .container-header header nav ul li a:hover {
-    color: #1cb698;
+    color: #3E923A;
 }
 
 .nav-responsive {
-    background-color: #1cb698;
+    background-color: #3E923A;
     color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
@@ -69,11 +71,11 @@ html {
 /*================ Section Inicio ================*/
 .inicio {
     background: linear-gradient(to top,
-            rgba(30, 35, 38, 0.9),
-            rgba(30, 35, 38, 0.2)),
-        url('../img/fondo.jpg') no-repeat center center;
+            rgba(48, 48, 48, .99),
+            rgba(48, 48, 48, .4)),
+        url('../img/fondo.jpeg') no-repeat center center;
     background-size: cover;
-    height: 70vw;
+    height: 55vw;
     color: #fff;
     display: flex;
     align-items: center;
@@ -81,7 +83,7 @@ html {
 
 .inicio .container-banner {
     padding: 20px;
-    background-color: #1e2326;
+    background-color: rgb(48, 48, 48);
     max-width: 350px;
     margin: auto;
     text-align: center;
@@ -90,9 +92,10 @@ html {
 
 .inicio .container-banner img {
     margin-top: 40px;
-    border: 10px solid #1cb698;
+    border: 10px solid #3E923A;
+    box-shadow: 0px 0px 30px 2px #68A063;
     display: block;
-    width: 80%;
+    width: 75%;
     margin: auto;
     border-radius: 100%;
 }
@@ -119,17 +122,18 @@ html {
     line-height: 40px;
     margin: 40px 5px;
     font-size: 20px;
-    transition: 0.3s;
+    transition: .4s;
 }
 
 .inicio .container-banner .redes a:hover {
-    background-color: #1cb69899;
+    background-color: #3E923A99;
+    box-shadow: 0px 0px 10px 2px #68A063;
 }
 
 
 /*================ Section Sobre Mi ================*/
 .sobremi {
-    background-color: #1e2326;
+    background-color: #303030;
     color: #fff;
     padding: 50px 20px;
 }
@@ -153,7 +157,7 @@ html {
 }
 
 .sobremi .container-section p span {
-    color: #1cb698;
+    color: #3E923A;
     font-weight: bold;
 }
 
@@ -181,12 +185,12 @@ html {
 
 .sobremi .fila .col ul li strong {
     display: inline-block;
-    color: #1cb698;
+    color: #3E923A;
     width: 130px;
 }
 
 .sobremi .fila .col ul li span {
-    background-color: #1cb698;
+    background-color: #3E923A;
     padding: 3px;
     font-weight: bold;
     border-radius: 5px;
@@ -200,18 +204,19 @@ html {
 .sobremi .fila .col .container-intereses .interes {
     width: 100px;
     height: 100px;
-    background-color: #252a2e;
+    background-color: #3c3c3c;
     border-radius: 10px;
     margin: 0 15px 15px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: 0.3s;
+    transition: .5s;
 }
 
 .sobremi .fila .col .container-intereses .interes:hover {
-    background-color: #1cb698;
+    background-color: #3E923A;
+    box-shadow: 0px 0px 9px 1px #68A063;
 }
 
 .sobremi .fila .col .container-intereses .interes i {
@@ -239,19 +244,20 @@ html {
     left: 0;
     width: 0;
     height: 100%;
-    background-color: #1cb698;
+    background-color: #3E923A;
     z-index: -1;
     transition: 1s;
 }
 
 .sobremi button:hover .overlay {
     width: 100%;
+    box-shadow: 0px 0px 10px 2px #68A063;
 }
 
 
 /*================ Section Skills ================*/
 .skills {
-    background-color: #252a2e;
+    background-color: #343434;
     color: #fff;
     padding: 50px 20px;
 }
@@ -297,7 +303,7 @@ html {
 }
 
 .skills .skill .progreso {
-    background-color: #1cb698;
+    background-color: #3E923A;
     position: absolute;
     top: 0;
     left: 0;
@@ -308,7 +314,7 @@ html {
     position: absolute;
     height: 40px;
     width: 40px;
-    background-color: #1cb698;
+    background-color: #3E923A;
     border-radius: 50px;
     line-height: 40px;
     text-align: center;
@@ -320,7 +326,7 @@ html {
 /* Animación de la clase Skills js */
 .skills .skill .javascript {
     width: 0%;
-    animation: 2s javascript forwards;
+    animation: 3s javascript forwards;
 }
 
 @keyframes javascript {
@@ -335,7 +341,7 @@ html {
 
 .skills .skill .node {
     width: 0%;
-    animation: 2s node forwards;
+    animation: 3s node forwards;
 }
 
 @keyframes node {
@@ -350,7 +356,7 @@ html {
 
 .skills .skill .mongodb {
     width: 0%;
-    animation: 2s mongodb forwards;
+    animation: 3s mongodb forwards;
 }
 
 @keyframes mongodb {
@@ -365,7 +371,7 @@ html {
 
 .skills .skill .git {
     width: 0%;
-    animation: 2s git forwards;
+    animation: 3s git forwards;
 }
 
 @keyframes git {
@@ -380,7 +386,7 @@ html {
 
 .skills .skill .htmlcss {
     width: 0%;
-    animation: 2s htmlcss forwards;
+    animation: 3s htmlcss forwards;
 }
 
 @keyframes htmlcss {
@@ -395,7 +401,7 @@ html {
 
 .skills .skill .react {
     width: 0%;
-    animation: 2s react forwards;
+    animation: 3s react forwards;
 }
 
 @keyframes react {
@@ -411,7 +417,7 @@ html {
 /* Animación de la clase Profesional Skills js */
 .skills .skill .communication {
     width: 0%;
-    animation: 2s communication forwards;
+    animation: 3s communication forwards;
 }
 
 @keyframes communication {
@@ -426,7 +432,7 @@ html {
 
 .skills .skill .team {
     width: 0%;
-    animation: 2s team forwards;
+    animation: 3s team forwards;
 }
 
 @keyframes team {
@@ -441,7 +447,7 @@ html {
 
 .skills .skill .creative {
     width: 0%;
-    animation: 2s creative forwards;
+    animation: 3s creative forwards;
 }
 
 @keyframes creative {
@@ -456,7 +462,7 @@ html {
 
 .skills .skill .dedication {
     width: 0%;
-    animation: 2s dedication forwards;
+    animation: 3s dedication forwards;
 }
 
 @keyframes dedication {
@@ -471,7 +477,7 @@ html {
 
 .skills .skill .htmlcss {
     width: 0%;
-    animation: 2s htmlcss forwards;
+    animation: 3s htmlcss forwards;
 }
 
 @keyframes htmlcss {
@@ -486,7 +492,7 @@ html {
 
 .skills .skill .project {
     width: 0%;
-    animation: 2s project forwards;
+    animation: 3s project forwards;
 }
 
 @keyframes project {
@@ -502,7 +508,7 @@ html {
 
 /*================ Section Curriculum ================*/
 .curriculum {
-    background-color: #1e2326;
+    background-color: #303030;
     color: #fff;
     padding: 50px 20px;
 }
@@ -535,18 +541,18 @@ html {
 }
 
 .curriculum .fila .izquierda {
-    border-right: 2px solid #252a2e;
+    border-right: 2px solid #3c3c3c;
 }
 
 .curriculum .fila .derecha {
-    border-left: 2px solid #252a2e;
+    border-left: 2px solid #3c3c3c;
 }
 
 /* Aplicamos estilo a item: */
 .curriculum .fila .item {
     padding: 20px;
     margin-bottom: 30px;
-    background-color: #252a2e;
+    background-color: #3c3c3c;
     position: relative;
 }
 
@@ -556,7 +562,7 @@ html {
 }
 
 .curriculum .fila .item .casa {
-    color: #1cb698;
+    color: #3E923A;
     font-size: 20px;
     font-weight: bold;
     display: block;
@@ -564,7 +570,7 @@ html {
 
 .curriculum .fila .item .fecha {
     display: block;
-    color: #1cb698;
+    color: #3E923A;
     margin-bottom: 10px;
 }
 
@@ -574,19 +580,19 @@ html {
 
 /* Aplicamos el estilo a fila izq y der */
 .curriculum .fila .izq {
-    border-right: 2px solid #1cb698;
+    border-right: 2px solid #3E923A;
     margin-right: 20px;
 }
 
 .curriculum .fila .der {
-    border-left: 2px solid #1cb698;
+    border-left: 2px solid #3E923A;
     margin-left: 20px;
 }
 
 /* Continuamos añadiendo estilo a los conectores y círculos */
 .curriculum .fila .item .conector-i {
     height: 2px;
-    background-color: #1cb698;
+    background-color: #3E923A;
     width: 47px;
     position: absolute;
     top: 50%;
@@ -599,7 +605,7 @@ html {
     height: 10px;
     width: 10px;
     border-radius: 50%;
-    background-color: #1cb698;
+    background-color: #3E923A;
     float: right;
     position: relative;
     bottom: 4px;
@@ -607,7 +613,7 @@ html {
 
 .curriculum .fila .item .conector-d {
     height: 2px;
-    background-color: #1cb698;
+    background-color: #3E923A;
     width: 47px;
     position: absolute;
     top: 50%;
@@ -620,7 +626,7 @@ html {
     height: 10px;
     width: 10px;
     border-radius: 50%;
-    background-color: #1cb698;
+    background-color: rgb(62, 146, 58);
     float: left;
     position: relative;
     bottom: 4px;
@@ -635,7 +641,7 @@ html {
 
 /*================ Section Portfolio ================*/
 .portfolio {
-    background-color: #252a2e;
+    background-color: #353535;
     color: #fff;
     padding: 50px 20px;
 }
@@ -679,7 +685,8 @@ html {
     width: 100%;
     height: 100%;
     text-align: center;
-    background: linear-gradient(rgba(28, 182, 152, .8), rgba(28, 182, 152, .7));
+    background: linear-gradient(rgba(62, 146, 50, .6), rgba(62, 146, 50, .5));
+    box-shadow: 0px 0px 10px 2px #68A063;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -707,7 +714,7 @@ html {
 /*================ Section Contacto ================*/
 .contacto {
     background-image: url('../img/contact_bg.png');
-    background-color: #1e2326;
+    background-color: #303030;
     color: #fff;
     padding: 50px 0;
 }
@@ -742,7 +749,7 @@ html {
     padding: 18px;
     border: none;
     margin-bottom: 20px;
-    background-color: #252a2e;
+    background-color: #3c3c3c;
     color: #fff;
     font-size: 17px;
 }
@@ -769,13 +776,14 @@ html {
     left: 0;
     width: 0;
     height: 100%;
-    background-color: #1cb698;
+    background-color: #3E923A;
     transition: 1s;
     z-index: -1;
 }
 
 .contacto button:hover .overlay {
     width: 100%;
+    box-shadow: 0px 0px 10px 2px #68A063;
 }
 
 /* Estilos img, .info, ul, li, i */
@@ -786,7 +794,7 @@ html {
 .contacto .col .info {
     position: absolute;
     top: 40%;
-    background-color: #252a2e;
+    background-color: #3c3c3c;
     padding: 20px;
     width: 350px;
     left: 50%;
@@ -802,7 +810,7 @@ html {
 }
 
 .contacto .col .info ul li i {
-    color: #1cb698;
+    color: #3E923A;
     display: inline-block;
     margin-right: 20px;
 }
@@ -810,7 +818,7 @@ html {
 
 /*================ Footer ================*/
 footer {
-    background-color: #252a2e;
+    background-color: #3c3c3c;
     color: #fff;
     padding: 50px 0 30px 0;
     text-align: center;
@@ -834,13 +842,14 @@ footer .redes a {
     margin: 40px 5px;
     font-size: 20px;
     transform: 3s;
+    transition: .4s;
 }
 
 footer .arriba {
     display: block;
     width: 50px;
     height: 50px;
-    background-color: #1cb698;
+    background-color: #3E923A;
     color: #fff;
     position: absolute;
     left: 50%;
@@ -849,4 +858,11 @@ footer .arriba {
     border-radius: 50%;
     line-height: 50px;
     font-size: 18px;
+    transition: .4s;
+}
+
+footer .redes a:hover,
+footer .arriba:hover {
+    background-color: #1cb69899;
+    box-shadow: 0px 0px 10px 2px #68A063;
 }

@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto+Mono:ital,wght@0,100;0,200;0,400;0,600;0,700;1,100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Righteous&family=Roboto+Mono:ital,wght@0,100;0,200;0,400;0,600;0,700;1,100&display=swap");
 
 * {
     box-sizing: border-box;
-    font-family: 'Roboto Mono';
+    font-family: "Roboto Mono";
     margin: 0;
     padding: 0;
 }
@@ -11,11 +11,10 @@ html {
     scroll-behavior: smooth;
 }
 
-
 /*================ Menu ================*/
 .container-header {
     background-color: rgba(48, 48, 48, 0.98);
-    transition: background-color .5s ease; /* transición suave */
+    transition: background-color 0.5s ease; /* transición suave */
     position: fixed;
     width: 100%;
     top: 0;
@@ -36,7 +35,7 @@ html {
 .container-header header .logo a {
     font-family: Righteous;
     font-size: 36px;
-    color: #3E923A;
+    color: #3e923a;
     text-decoration: none;
 }
 
@@ -55,11 +54,11 @@ html {
 }
 
 .container-header header nav ul li a:hover {
-    color: #3E923A;
+    color: #3e923a;
 }
 
 .nav-responsive {
-    background-color: #3E923A;
+    background-color: #3e923a;
     color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
@@ -67,13 +66,14 @@ html {
     display: none;
 }
 
-
 /*================ Section Inicio ================*/
 .inicio {
-    background: linear-gradient(to top,
-            rgba(48, 48, 48, .99),
-            rgba(48, 48, 48, .4)),
-        url('../img/fondo.jpeg') no-repeat center center;
+    background: linear-gradient(
+            to top,
+            rgba(48, 48, 48, 0.99),
+            rgba(48, 48, 48, 0.4)
+        ),
+        url("../img/fondo.jpeg") no-repeat center center;
     background-size: cover;
     height: 55vw;
     color: #fff;
@@ -92,8 +92,8 @@ html {
 
 .inicio .container-banner img {
     margin-top: 40px;
-    border: 10px solid #3E923A;
-    box-shadow: 0px 0px 30px 2px #68A063;
+    border: 10px solid #3e923a;
+    box-shadow: 0px 0px 30px 2px #68a063;
     display: block;
     width: 75%;
     margin: auto;
@@ -103,7 +103,7 @@ html {
 .inicio .container-banner h1 {
     margin-top: 30px;
     font-size: 40px;
-    font-family: 'Righteous';
+    font-family: "Righteous";
 }
 
 .inicio .container-banner h2 {
@@ -122,14 +122,13 @@ html {
     line-height: 40px;
     margin: 40px 5px;
     font-size: 20px;
-    transition: .4s;
+    transition: 0.4s;
 }
 
 .inicio .container-banner .redes a:hover {
-    background-color: #3E923A99;
-    box-shadow: 0px 0px 10px 2px #68A063;
+    background-color: #3e923a99;
+    box-shadow: 0px 0px 10px 2px #68a063;
 }
-
 
 /*================ Section Sobre Mi ================*/
 .sobremi {
@@ -145,7 +144,7 @@ html {
 
 .sobremi h2 {
     font-size: 48px;
-    font-family: 'Righteous';
+    font-family: "Righteous";
     text-align: center;
     padding: 20px 0;
 }
@@ -157,7 +156,7 @@ html {
 }
 
 .sobremi .container-section p span {
-    color: #3E923A;
+    color: #3e923a;
     font-weight: bold;
 }
 
@@ -171,7 +170,7 @@ html {
 
 .sobremi .fila .col h3 {
     font-size: 28px;
-    font-family: 'Righteous';
+    font-family: "Righteous";
     margin-bottom: 25px;
 }
 
@@ -185,12 +184,12 @@ html {
 
 .sobremi .fila .col ul li strong {
     display: inline-block;
-    color: #3E923A;
+    color: #3e923a;
     width: 130px;
 }
 
 .sobremi .fila .col ul li span {
-    background-color: #3E923A;
+    background-color: #3e923a;
     padding: 3px;
     font-weight: bold;
     border-radius: 5px;
@@ -211,12 +210,12 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .sobremi .fila .col .container-intereses .interes:hover {
-    background-color: #3E923A;
-    box-shadow: 0px 0px 9px 1px #68A063;
+    background-color: #3e923a;
+    box-shadow: 0px 0px 9px 1px #68a063;
 }
 
 .sobremi .fila .col .container-intereses .interes i {
@@ -244,16 +243,15 @@ html {
     left: 0;
     width: 0;
     height: 100%;
-    background-color: #3E923A;
+    background-color: #3e923a;
     z-index: -1;
     transition: 1s;
 }
 
 .sobremi button:hover .overlay {
     width: 100%;
-    box-shadow: 0px 0px 10px 2px #68A063;
+    box-shadow: 0px 0px 10px 2px #68a063;
 }
-
 
 /*================ Section Skills ================*/
 .skills {
@@ -269,7 +267,7 @@ html {
 
 .skills h2 {
     font-size: 48px;
-    font-family: 'Righteous';
+    font-family: "Righteous";
     text-align: center;
     padding: 20px 0;
 }
@@ -285,11 +283,11 @@ html {
 
 .skills .fila .col h3 {
     font-size: 28px;
-    font-family: 'Righteous';
+    font-family: "Righteous";
     margin: 25px;
 }
 
-.skills .skill>span {
+.skills .skill > span {
     font-weight: bold;
     display: block;
 }
@@ -303,7 +301,7 @@ html {
 }
 
 .skills .skill .progreso {
-    background-color: #3E923A;
+    background-color: #3e923a;
     position: absolute;
     top: 0;
     left: 0;
@@ -314,7 +312,7 @@ html {
     position: absolute;
     height: 40px;
     width: 40px;
-    background-color: #3E923A;
+    background-color: #3e923a;
     border-radius: 50px;
     line-height: 40px;
     text-align: center;
@@ -505,7 +503,6 @@ html {
     }
 }
 
-
 /*================ Section Curriculum ================*/
 .curriculum {
     background-color: #303030;
@@ -520,7 +517,7 @@ html {
 
 .curriculum h2 {
     font-size: 48px;
-    font-family: 'Righteous';
+    font-family: "Righteous";
     text-align: center;
     padding: 20px 0;
 }
@@ -536,7 +533,7 @@ html {
 
 .curriculum .fila .col h3 {
     font-size: 28px;
-    font-family: 'Righteous';
+    font-family: "Righteous";
     margin-bottom: 25px;
 }
 
@@ -562,7 +559,7 @@ html {
 }
 
 .curriculum .fila .item .casa {
-    color: #3E923A;
+    color: #3e923a;
     font-size: 20px;
     font-weight: bold;
     display: block;
@@ -570,7 +567,7 @@ html {
 
 .curriculum .fila .item .fecha {
     display: block;
-    color: #3E923A;
+    color: #3e923a;
     margin-bottom: 10px;
 }
 
@@ -580,19 +577,19 @@ html {
 
 /* Aplicamos el estilo a fila izq y der */
 .curriculum .fila .izq {
-    border-right: 2px solid #3E923A;
+    border-right: 2px solid #3e923a;
     margin-right: 20px;
 }
 
 .curriculum .fila .der {
-    border-left: 2px solid #3E923A;
+    border-left: 2px solid #3e923a;
     margin-left: 20px;
 }
 
 /* Continuamos añadiendo estilo a los conectores y círculos */
 .curriculum .fila .item .conector-i {
     height: 2px;
-    background-color: #3E923A;
+    background-color: #3e923a;
     width: 47px;
     position: absolute;
     top: 50%;
@@ -605,7 +602,7 @@ html {
     height: 10px;
     width: 10px;
     border-radius: 50%;
-    background-color: #3E923A;
+    background-color: #3e923a;
     float: right;
     position: relative;
     bottom: 4px;
@@ -613,7 +610,7 @@ html {
 
 .curriculum .fila .item .conector-d {
     height: 2px;
-    background-color: #3E923A;
+    background-color: #3e923a;
     width: 47px;
     position: absolute;
     top: 50%;
@@ -638,7 +635,6 @@ html {
     justify-content: space-between;
 }
 
-
 /*================ Section Portfolio ================*/
 .portfolio {
     background-color: #353535;
@@ -653,7 +649,7 @@ html {
 
 .portfolio h2 {
     font-size: 48px;
-    font-family: 'Righteous';
+    font-family: "Righteous";
     text-align: center;
     padding: 20px 0;
 }
@@ -685,12 +681,12 @@ html {
     width: 100%;
     height: 100%;
     text-align: center;
-    background: linear-gradient(rgba(62, 146, 50, .6), rgba(62, 146, 50, .5));
-    box-shadow: 0px 0px 10px 2px #68A063;
+    background: linear-gradient(rgba(62, 146, 50, 0.6), rgba(62, 146, 50, 0.5));
+    box-shadow: 0px 0px 10px 2px #68a063;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    transition: .5s;
+    transition: 0.5s;
     font-size: 18px;
     letter-spacing: 3px;
     opacity: 0;
@@ -699,7 +695,7 @@ html {
 /* Estilo h3 y hover */
 .portfolio .galeria .proyecto h3 {
     margin-bottom: 20px;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .portfolio .galeria .proyecto .overlay:hover {
@@ -710,10 +706,9 @@ html {
     margin-bottom: 0px;
 }
 
-
 /*================ Section Contacto ================*/
 .contacto {
-    background-image: url('../img/contact_bg.png');
+    background-image: url("../img/contact_bg.png");
     background-color: #303030;
     color: #fff;
     padding: 50px 0;
@@ -726,7 +721,7 @@ html {
 
 .contacto h2 {
     font-size: 48px;
-    font-family: 'Righteous';
+    font-family: "Righteous";
     text-align: center;
     padding: 20px 0;
 }
@@ -776,14 +771,14 @@ html {
     left: 0;
     width: 0;
     height: 100%;
-    background-color: #3E923A;
+    background-color: #3e923a;
     transition: 1s;
     z-index: -1;
 }
 
 .contacto button:hover .overlay {
     width: 100%;
-    box-shadow: 0px 0px 10px 2px #68A063;
+    box-shadow: 0px 0px 10px 2px #68a063;
 }
 
 /* Estilos img, .info, ul, li, i */
@@ -810,11 +805,10 @@ html {
 }
 
 .contacto .col .info ul li i {
-    color: #3E923A;
+    color: #3e923a;
     display: inline-block;
     margin-right: 20px;
 }
-
 
 /*================ Footer ================*/
 footer {
@@ -827,7 +821,7 @@ footer {
 }
 
 footer .redes {
-    margin-bottom: 20px
+    margin-bottom: 20px;
 }
 
 footer .redes a {
@@ -842,14 +836,14 @@ footer .redes a {
     margin: 40px 5px;
     font-size: 20px;
     transform: 3s;
-    transition: .4s;
+    transition: 0.4s;
 }
 
 footer .arriba {
     display: block;
     width: 50px;
     height: 50px;
-    background-color: #3E923A;
+    background-color: #3e923a;
     color: #fff;
     position: absolute;
     left: 50%;
@@ -858,15 +852,14 @@ footer .arriba {
     border-radius: 50%;
     line-height: 50px;
     font-size: 18px;
-    transition: .4s;
+    transition: 0.4s;
 }
 
 footer .redes a:hover,
 footer .arriba:hover {
     background-color: #1cb69899;
-    box-shadow: 0px 0px 10px 2px #68A063;
+    box-shadow: 0px 0px 10px 2px #68a063;
 }
-
 
 /*================ Media Queries - Responsive ================*/
 
@@ -889,7 +882,9 @@ footer .arriba:hover {
         display: block;
         position: absolute;
         right: 0;
-        top: 75px;
+        top: 80px;
+        right: 5px;
+        border-radius: 10px;
         background-color: #3c3c3c;
         width: 180px;
     }
@@ -898,9 +893,31 @@ footer .arriba:hover {
         display: block !important;
     }
 
-    nav.responsive ul li{
-        border-bottom: 1px solid #fff;
+    nav.responsive ul li {
+        border-bottom: 1px solid #f0eeee;
         padding: 10px 0;
+        position: relative;
+    }
+     #contacto {
+        border: none !important;
+    }
+
+    nav.responsive nav.ocultar-menu {
+        opacity: 0;
+        transition: opacity 8s ease-in-out;
+    }
+    .responsive.cerrar-menu {
+        transform: translateX(-100%);
+    }
+    @keyframes cerrar-menu {
+        from {
+            transform: translateX(0%);
+            transition: opacity 8s ease-in-out;
+        }
+        to {
+            transition: opacity 0.5s;
+            transform: translateX(-100%);
+        }
     }
 }
 

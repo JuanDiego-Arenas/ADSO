@@ -42,3 +42,11 @@ let edad = 20;
 
 console.log(nombre, 'tine', edad, 'años');
 
+const usuarios = ['tina', 'danny', 'mark', 'bolaji'];
+const lista = usuarios.map(elem => {
+	return '<li>' + elem + '</li>';
+});
+
+const render = '<ul>' + lista.join('') + '</ul>';
+
+document.write(render);

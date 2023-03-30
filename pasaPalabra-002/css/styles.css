@@ -64,18 +64,18 @@ button:hover {
 }
 
 .pregunta-actual {
-    background-color: #000;
-    color: #fff;
+    background-color: #000 !important;
+    color: #fff !important;
 }
 
 .bien-respondida {
-    background-color: #3edbbb;
-    color: #fff;
+    background-color: #3edbbb !important;
+    color: #fff !important;
 }
 
 .mal-respondida {
-    background-color: #fb797b;
-    color: #fff;
+    background-color: #fb797b !important;
+    color: #fff !important;
 }
 
 .contenedor-pregunta {

@@ -40,7 +40,7 @@ body {
 }
 
 .product-img {
-    background-image: url("");
+    background-image: url("https://acroadtrip.blob.core.windows.net/catalogo-imagenes/xl/RT_V_dfc5bc45064f4732a68e0bd28d39b6f5.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -69,4 +69,80 @@ body {
 .stars {
     color: #FFD700;
     font-size: 1em;
+}
+
+/* colores */
+.colors-price {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    justify-content: space-between;
+    margin-top: -15px;
+}
+
+.colors {
+    display: flex;
+    width: 6rem;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.red {
+    background: #ff0000;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.green {
+    background: #2d572c;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.black {
+    background: #000000;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.pricing {
+    display: flex;
+    width: 12rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.old-price {
+    font-weight: 100;
+}
+
+/* botones */
+button {
+    cursor: pointer;
+}
+
+#button {
+    background-color: #000;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+}
+
+button white-button {
+    background-color: #fff;
+}
+
+.button-text {
+    color: #fff;
+    margin-left: 5px;
+}
+
+.feedback {
+    display: none;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
 }

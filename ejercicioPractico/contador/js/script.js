@@ -5,6 +5,7 @@ const incrementoBtn = document.querySelector('.incremento');
 const resetBtn = document.querySelector('.reset');
 let contador = 0;
 
+
 decrementoBtn.addEventListener('click',() => {
     contador --;
     numero.textContent = contador;

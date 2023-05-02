@@ -7,6 +7,10 @@
     padding: 0;
 }
 
+a{
+    color: #fff;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -640,6 +644,8 @@ html {
     background-color: #353535;
     color: #fff;
     padding: 50px 20px;
+    text-decoration: none;
+    
 }
 
 .portfolio .container-section {
@@ -690,6 +696,14 @@ html {
     font-size: 18px;
     letter-spacing: 3px;
     opacity: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration-color: #fff;
 }
 
 /* Estilo h3 y hover */

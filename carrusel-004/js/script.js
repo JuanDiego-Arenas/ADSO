@@ -7,6 +7,13 @@ let imgMuestra = ['001', '002', '003', '004', '005', '006'];
 
 let contador = 0;
 
+const style = () => {
+    imagenes.style.backgroundPosition= 'center';
+    imagenes.style.backgroundRepeat= 'no-repeat';
+    imagenes.style.backgroundAttachment = 'fixed';
+    imagenes.style.backgroundSize = 'cover';
+};
+style();
 
 const derecha = () => {
 	contador++;
@@ -15,10 +22,7 @@ const derecha = () => {
         console.log(contador);
 	}
 	imagenes.style.background = `url(img/${imgMuestra[contador]}.jpg)`;
-    imagenes.style.backgroundPosition= 'center';
-    imagenes.style.backgroundRepeat= 'no-repeat';
-    imagenes.style.backgroundAttachment = 'fixed';
-    imagenes.style.backgroundSize = 'cover';
+	style();
     
 };
 btnRight.addEventListener('click', derecha);
@@ -28,11 +32,8 @@ const izquierda = () => {
 	if (contador < 0) {
 		contador = 5;
 	}
-	imagenes.style.background = `url(img/${imgMuestra[contador]}.jpg)`;    
-    imagenes.style.backgroundPosition = 'center';
-	imagenes.style.backgroundRepeat = 'no-repeat';
-	imagenes.style.backgroundAttachment = 'fixed';
-	imagenes.style.backgroundSize = 'cover';
+	imagenes.style.background = `url(img/${imgMuestra[contador]}.jpg)`;
+	style();
 };
 btnLeft.addEventListener('click', izquierda);
  

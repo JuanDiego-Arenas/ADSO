@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;900&display=swap');
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100vw;
+    height: 60px;
+    background: #fff;
+    box-shadow: 0px 5px 10px hsla(0, 0%, 0%, 0.243);
+}
+
+.nav {
+    padding: 10px 0;
+}
+
+.nav img {
+    height: 40px;
+
+}
+
+.bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+button {
+    padding: 9px;
+    min-width: 135px;
+    background-color: #F34F36;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.form-enviar:active {
+    background-color: #2A4C62;
+}
+
+.section {
+    background-color: #2A4C62;
+    /* background: linear-gradient(#2A4C62 80%, #B9E6E9); */
+    color: #fff;
+}
+
+.img img {
+    height: 300px;
+}
+
+
+.login {
+    display: flex;
+    padding: 50px 0;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.grupo {
+    width: 800px;
+    display: flex;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+    min-width: 600px;
+    max-width: 700px;
+}
+
+.info span {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.form {
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    gap: 22px;
+    border-radius: 10px;
+    margin-right: 20px;
+    padding-bottom: 20px;
+    width: 320px;
+}
+
+.form h2 {
+    padding: 30px 0;
+    text-align: center;
+    font-weight: 700;
+    width: 310px;
+}
+
+.form button {
+    margin: auto;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input input {
+    border: none;
+    border-bottom: 1px solid rgba(99, 96, 96, 0.455);
+    outline: none;
+    padding: 5px 9px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #747474;
+}
+
+input:active {
+    border-bottom: 1px solid rgb(99, 96, 96);
+}
+
+select {
+    border: none;
+    border-bottom: 1px solid rgba(99, 96, 96, 0.455);
+    outline: none;
+    padding: 8px 10px;
+    font-size: 18px;
+    color: #747474;
+}
+
+
+.texto-login h3 {
+    color: #B9E6E9;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.texto-login h2 {
+    font-size: 34px;
+}

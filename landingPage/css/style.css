@@ -41,7 +41,7 @@ button {
 }
 
 .form-enviar:active {
-    background-color: #2A4C62;
+    background-color: #13aff0;
 }
 
 .section {
@@ -144,4 +144,138 @@ select {
 
 .texto-login h2 {
     font-size: 34px;
+}
+
+/* <--------------------- Section andres ---------------------> */
+
+.section-andres {
+    line-height: 15px;
+    background-color: #f3fafd;
+    color: #212529;
+}
+
+.container-andres {
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.info-andres {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 495px;
+    height: 400px;
+}
+
+.info-andres p {
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: -0.28px;
+    line-height: 14px;
+    text-decoration: none solid rgb(121, 121, 121);
+    text-align: center;
+    color: #797979;
+    width: 400px;
+    margin-bottom: 25px;
+    padding-right: 35px;
+    min-height: auto;
+    min-width: auto;
+}
+
+.info-andres strong {
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none solid rgb(121, 121, 121);
+    color: #36768A;
+}
+
+.info-andres a {
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.otto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 487px;
+}
+
+.otto img {
+    height: 50px;
+    margin-right: 13px;
+}
+
+.video-andres {
+    display: flex;
+    height: 400px;
+    width: 495px;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-andres img {
+    width: 495px;
+}
+
+/* <--------------------- Section poster ---------------------> */
+.section-poster {
+    background-color: #f3fafd;
+}
+
+.container-poster {
+    background-color: #fff;
+    border-radius: 20px;
+    width: 995px;
+    margin: auto;
+    padding: 75px 50px;
+}
+.poster {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-poster h2 {
+    font-size: 30px;
+    color: #322C2E;
+}
+
+.img-poster span {
+    color: #34768A;
+}
+
+.img-poster img {
+    height: 500px;
+}
+
+.items-poster {
+    padding: 10px 10px 0 75px ;
+}
+
+
+.poster-item {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.poster-item img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.item-text h3 {
+    font-size: 18px;
+    color: #36768A;
+}
+
+.item-text p {
+    font-size: 15px;
+    color: #797979;
 }

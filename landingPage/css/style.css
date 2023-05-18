@@ -6,117 +6,132 @@
     padding: 0;
 }
 
+/* <--------------------- Section nav ---------------------> */
 header {
-    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100vw;
     height: 60px;
     background: #fff;
     box-shadow: 0px 5px 10px hsla(0, 0%, 0%, 0.243);
 }
 
-.nav {
-    padding: 10px 0;
+.navbar {
+    /* padding: 10px 0; */
 }
 
-.nav img {
+.navbar img {
     height: 40px;
 
 }
 
-.bar {
+.container-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 1200px;
+    margin: auto;
     padding: 0 10px;
 }
 
 button {
     padding: 9px;
-    min-width: 135px;
+    min-width: 170px;
+    height: 40px;
     background-color: #F34F36;
     color: #fff;
     border: none;
     border-radius: 7px;
-    font-size: 14px;
+    font-size: 16px;
     cursor: pointer;
 }
 
-.form-enviar:active {
-    background-color: #13aff0;
-}
-
-.section {
+/* <--------------- Section login ---------------> */
+.section-login {
     background-color: #2A4C62;
-    /* background: linear-gradient(#2A4C62 80%, #B9E6E9); */
+    /* background: linear-gradient(#212529 30px, #36768a); */
     color: #fff;
 }
 
-.img img {
-    height: 300px;
-}
-
-
-.login {
+.container-grupo {
     display: flex;
     padding: 50px 0;
-    width: 100vw;
+    max-width: 1255px;
+    margin: auto;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-.grupo {
-    width: 800px;
-    display: flex;
-}
-
+/* información panel */
 .info {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 20px;
     min-width: 600px;
-    max-width: 700px;
+    max-width: 900px;
+}
+
+.info h2 {
+    font-size: 39Px;
+    font-weight: 900;
+    line-height: 37px;
+    letter-spacing: -1px;
+}
+
+.info h3 {
+    color: #B9E6E9;
+    font-size: 31px;
+    line-height: 31px;
+    margin-bottom: 20px;
 }
 
 .info span {
-    font-size: 14px;
+    font-size: 16px;
+    line-height: 20px;
     font-weight: 400;
 }
 
+.img img {
+    height: 400px;
+}
+
+/* Formulario */
 .form {
     background-color: #fff;
     color: #000;
     display: flex;
     flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
     padding: 0 20px;
-    gap: 22px;
     border-radius: 10px;
     margin-right: 20px;
     padding-bottom: 20px;
-    width: 320px;
+    width: 560px;
 }
 
 .form h2 {
-    padding: 30px 0;
-    text-align: center;
+    font-size: 22px;
     font-weight: 700;
-    width: 310px;
-}
-
-.form button {
-    margin: auto;
+    color: #322c2e;
+    padding: 30px 0 20px;
+    text-align: center;
+    width: 300px;
 }
 
 .input {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
 }
 
 .input input {
     border: none;
     border-bottom: 1px solid rgba(99, 96, 96, 0.455);
     outline: none;
-    padding: 5px 9px;
+    padding: 6px 12px;
     font-size: 18px;
     font-weight: 300;
     color: #747474;
@@ -130,24 +145,20 @@ select {
     border: none;
     border-bottom: 1px solid rgba(99, 96, 96, 0.455);
     outline: none;
-    padding: 8px 10px;
+    padding: 6px 12px;
     font-size: 18px;
     color: #747474;
 }
 
-
-.texto-login h3 {
-    color: #B9E6E9;
-    font-size: 30px;
-    margin-bottom: 30px;
+.form button {
+    margin: auto;
 }
 
-.texto-login h2 {
-    font-size: 34px;
+.form-enviar:active {
+    background-color: #13aff0;
 }
 
 /* <--------------------- Section andres ---------------------> */
-
 .section-andres {
     line-height: 15px;
     background-color: #f3fafd;

@@ -167,11 +167,14 @@ select {
 
 .container-andres {
     margin: auto;
+    padding: 50px 0;
 }
 
 .flex {
     display: flex;
     justify-content: center;
+    max-width: 1255px;
+    margin: auto;
 }
 
 .info-andres {
@@ -179,27 +182,26 @@ select {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 495px;
+    width: 627px;
     height: 400px;
 }
 
 .info-andres p {
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 300;
     letter-spacing: -0.28px;
-    line-height: 14px;
+    line-height: 20px;
     text-decoration: none solid rgb(121, 121, 121);
     text-align: center;
     color: #797979;
-    width: 400px;
+    width: 620px;
     margin-bottom: 25px;
-    padding-right: 35px;
     min-height: auto;
     min-width: auto;
 }
 
 .info-andres strong {
-    font-size: 16px;
+    font-size: 22px;
     font-weight: 700;
     text-decoration: none solid rgb(121, 121, 121);
     color: #36768A;
@@ -219,20 +221,21 @@ select {
 }
 
 .otto img {
-    height: 50px;
+    height: 65px;
     margin-right: 13px;
 }
 
+/* Video */
 .video-andres {
     display: flex;
+    width: 627px;
     height: 400px;
-    width: 495px;
     justify-content: center;
     align-items: center;
 }
 
 .video-andres img {
-    width: 495px;
+    width: 627px;
 }
 
 /* <--------------------- Section poster ---------------------> */

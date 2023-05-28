@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+* {
+    font-family: 'Handlee', cursive;
+}
+
+/* < !-- -------- Section main -------- --> */
+.main {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.container-main {
+    display: flex;
+    border: 3px solid #000;
+    border-radius: 30px;
+    width: 1200px;
+    height: 90vh;
+    margin: auto;
+}

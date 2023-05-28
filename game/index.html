@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Game</title>
+</head>
+
+<body>
+    <!-- -------- Section main -------- -->
+    <section>
+        <div class="main">
+            <div class="container-main">
+                <h1>Juego de Piedra, Papel o Tijera</h1>
+                <span>Selecciona una de las 3 opciones</span>
+
+                <!-- -------- Contenedor de imagenes -------- -->
+                <div class="container-img">
+                    <div class="container-piedra">
+                        <img src="./img/circulo.png" alt="circulo container">
+                        <img src="./img/piedra.png" alt="Piedra">
+                    </div>
+                    <div class="container-papel">
+                        <img src="./img/circulo.png" alt="circulo container">
+                        <img src="./img/papel.png" alt="papel">
+                    </div>
+                    <div class="container-tijeras">
+                        <img src="./img/circulo.png" alt="circulo container">
+                        <img src="./img/tijeras.png" alt="tijeras">
+                    </div>
+                </div>
+
+                <!-- -------- Container option -------- -->
+                <div class="container-option">
+                    <h2>El usuario eligió: <img src="./img/piedra.png"></h2>
+                    <h2>La maquina eligió: <img src="./img/tijeras.png"></h2>
+                </div>
+
+                <!-- -------- Resultado -------- -->
+                <h2>Empatado - Perdido - Ganado</h2>
+
+                <!-- -------- Container score -------- -->
+                <div class="container-score">
+                    <h2>Puntaje</h2>
+                    <div>
+                        <h2 class="user-score">Usuario: <span>2</span></h2>
+                        <h2 class="user-score">Máquina: <span>1</span></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

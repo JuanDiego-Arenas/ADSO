@@ -1,14 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
 
 * {
+    margin: 0;
+    padding: 0;
     font-family: 'Handlee', cursive;
 }
 
 /* < !-- -------- Section main -------- --> */
+
+section {
+    height: 100vh;
+}
+
 .main {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+    display: flex;
+    align-items: center;
+    height: 100vh;
 }
 
 .container-main {
@@ -18,14 +25,21 @@
     align-items: center;
     border: 3px solid #000;
     border-radius: 30px;
-    width: 1200px;
-    height: 90vh;
+    min-width: 850px;
+    height: 65vh;
     margin: auto;
 }
 
 .container-main h1 {
     font-size: 36px;
-    color: green;
+    color: #36d436;
+}
+
+.container-main span {
+    font-size: 24px;
+    font-weight: 500;
+    color: #2828fc;
+    margin: 20px 0;
 }
 
 /* -------- Contenedor de imagenes -------- */
@@ -39,6 +53,33 @@
     height: 90px;
     border-radius: 100%;
     /* position: relative; */
+}
+
+.container-img .container-item.piedra {
+    background-color: #36d4362c;
+    border-radius: 100%;
+}
+.container-img .container-item.piedra:active {
+    background-color: #299e2941;
+}
+
+.container-img .container-item.papel {
+    background-color: #2828fc2c;
+    border-radius: 100%;
+}
+
+.container-img .container-item.papel:active {
+    background-color: #2828fc41;
+}
+
+.container-img .container-item.tijeras {
+    background-color: #f85f5f2c;
+    border-radius: 100%;
+    /* border: 1px solid #000; */
+}
+
+.container-img .container-item.tijeras:active {
+    background-color: #a5373741;
 }
 
 .container-img img:hover {
@@ -56,17 +97,35 @@
     left: 20px;
 }
 
-
 /* -------- Container option -------- */
 .container-option {
     display: flex;
-    gap: 100px;
-}
-.container-option img {
-    height: 50px;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    gap: 115px;
 }
 
-.container-score{
+.container-option h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+}
+
+.container-option img {
+    height: 50px;
+    margin-left: 20px;
+}
+
+/* -------- Resultado -------- */
+.resultado {
+    margin: 20px 25px 25px 25px;
+    color: #fc4f4f;
+}
+
+/* -------- Container score -------- */
+.container-score {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -75,9 +134,15 @@
 
 .container-score h2 {
     font-size: 36px;
-    margin-bottom: 10px;
+    margin: 10px 0;
+    color: #ffa600;
 }
-.container-score .score{
+
+.container-score .score {
     display: flex;
-    gap:200px;
+    gap: 200px;
+}
+
+.container-score .score h3 {
+    font-size: 24px;
 }

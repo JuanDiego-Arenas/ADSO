@@ -26,8 +26,10 @@ section {
     border: 3px solid #000;
     border-radius: 30px;
     min-width: 850px;
-    height: 65vh;
-    margin: auto;
+    max-height: 490px;
+    min-height: 300px;
+    margin: 25px auto;
+    padding: 20px;
 }
 
 .container-main h1 {
@@ -59,6 +61,7 @@ section {
     background-color: #36d4362c;
     border-radius: 100%;
 }
+
 .container-img .container-item.piedra:active {
     background-color: #299e2941;
 }
@@ -99,7 +102,7 @@ section {
 
 /* -------- Container option -------- */
 .container-option {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     height: 90px;
@@ -120,13 +123,14 @@ section {
 
 /* -------- Resultado -------- */
 .resultado {
+    display: none;
     margin: 20px 25px 25px 25px;
     color: #fc4f4f;
 }
 
 /* -------- Container score -------- */
 .container-score {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;

@@ -13,9 +13,71 @@
 
 .container-main {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border: 3px solid #000;
     border-radius: 30px;
     width: 1200px;
     height: 90vh;
     margin: auto;
+}
+
+.container-main h1 {
+    font-size: 36px;
+    color: green;
+}
+
+/* -------- Contenedor de imagenes -------- */
+.container-img {
+    display: flex;
+    height: 90px;
+    gap: 70px;
+}
+
+.container-img .circulo {
+    height: 90px;
+    border-radius: 100%;
+    /* position: relative; */
+}
+
+.container-img img:hover {
+    cursor: pointer;
+}
+
+.container-img img:active {
+    box-shadow: #000;
+}
+
+.container-img .item img {
+    height: 50px;
+    position: relative;
+    top: -78px;
+    left: 20px;
+}
+
+
+/* -------- Container option -------- */
+.container-option {
+    display: flex;
+    gap: 100px;
+}
+.container-option img {
+    height: 50px;
+}
+
+.container-score{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-score h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.container-score .score{
+    display: flex;
+    gap:200px;
 }

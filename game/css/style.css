@@ -122,7 +122,7 @@ section {
 }
 
 /* -------- Resultado -------- */
-.resultado {
+#resultado {
     display: none;
     margin: 20px 25px 25px 25px;
     color: #fc4f4f;

@@ -19,19 +19,20 @@
 
                 <!-- -------- Contenedor de imagenes -------- -->
                 <div class="container-img">
-                    <div class="container-item piedra">
+                    <div class="container-item piedra" id="piedra">
+                        <a href="#"></a>
                         <img class="circulo" src="./img/circulo.png" alt="circulo container">
                         <div class="item">
                             <img src="./img/piedra.png" alt="Piedra">
                         </div>
                     </div>
-                    <div class="container-item papel">
+                    <div class="container-item papel" id="papel">
                         <img class="circulo" src="./img/circulo.png" alt="circulo container">
                         <div class="item">
                             <img src="./img/papel.png" alt="papel">
                         </div>
                     </div>
-                    <div class="container-item tijeras">
+                    <div class="container-item tijeras" id="tijeras">
                         <img class="circulo" src="./img/circulo.png" alt="circulo container">
                         <div class="item">
                             <img src="./img/tijeras.png" alt="tijeras">
@@ -41,19 +42,19 @@
 
                 <!-- -------- Container option -------- -->
                 <div class="container-option">
-                    <h2>El usuario eligió: <img src="./img/piedra.png"></h2>
-                    <h2>La maquina eligió: <img src="./img/tijeras.png"></h2>
+                    <h2>El usuario eligió: <img id="user" src=""></h2>
+                    <h2>La maquina eligió: <img id="machine" src=""></h2>
                 </div>
 
                 <!-- -------- Resultado -------- -->
-                <h2 class="resultado">Empatado - Perdido - Ganado</h2>
+                <h2 id="resultado">Empatado - Perdido - Ganado</h2>
 
                 <!-- -------- Container score -------- -->
-                <div class="container-score">
+                <div class="container-score" id="score">
                     <h2>Puntaje</h2>
                     <div class="score">
-                        <h3 class="user-score">Usuario: <span>2</span></h2>
-                        <h3 class="maquina-score">Máquina: <span>1</span></h2>
+                        <h3 class="user-score">Usuario: <span id="userScore">0</span></h2>
+                        <h3 class="machine-score">Máquina: <span id="machineScore">0</span></h2>
                     </div>
                 </div>
             </div>

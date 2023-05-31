@@ -11,6 +11,14 @@ body {
     background-color: #c53535;
 }
 
+hr {
+    border: none;
+    background-color: #999999;
+    border-radius: 50px;
+    width: 400px;
+    height: 1.5px;
+}
+
 /* -------- Section Main -------- */
 .main {
     display: flex;
@@ -56,6 +64,16 @@ body {
 }
 
 .container-input:focus-within {
-    border: 2px solid #c53535;
+    border: 2.5px solid #c53535ce;
     color: #c53535;
+}
+
+/* -------- Container input -------- */
+.container-palabra {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-palabra .segundo {
+    display: flex;
 }

@@ -21,12 +21,27 @@
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <input id="input" type="text" placeholder="Busca una palabra">
                 </div>
-                <p id="prueba">Escribe una palabra, presiona 'ENTER' y veras el resultado.</p>
-                <div class="container-palabra">
-                    <h2>Word: 'blue'</h2>
-                    <span>noun // blu// <i class="fa-solid fa-volume-high"></i> </span>
+                <p id="texto">Escribe una palabra, presiona 'ENTER' y veras el resultado.</p>
+
+
+                <div class="container-result" id="resultado">
+                    <!-- <h2>Word: 'blue'</h2>
+                    <span>noun // blu// <i class="fa-solid fa-volume-high"></i> </span> -->
+
+                    <div class="word">
+                        <div class="text-word">
+                            <h2>Word: ${data[0].word}</h2>
+                            <span>${data[0].meanings[0].partOfSpeech} /${data[0].phonetics[1].text}/</span>
+                        </div>
+                        <div id="sound">
+                            <i class="fa-solid fa-volume-high"></i>
+                        </div>
+                    </div>
+                    <hr>
                     
                 </div>
+
+
             </div>
 
         </div>

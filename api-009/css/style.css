@@ -17,7 +17,7 @@ hr {
     border-radius: 50px;
     width: 400px;
     height: 1.5px;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 /* -------- Section Main -------- */
@@ -96,11 +96,43 @@ hr {
 
 }
 
-.word .text-word h2 {
+.word h2 {
     font-size: 21px;
     color: #d60000;
 }
 
+.definition {
+    display: flex;
+    flex-direction: column;
+    justify-content: first baseline;
+}
+
+.definition h2 {
+    font-size: 21px;
+    color: #d60000;
+}
+
+
+.sinonimo h2 {
+    font-size: 21px;
+    color: #d60000;
+}
+
+.sourceUrl h2 {
+    font-size: 21px;
+    color: #d60000;
+}
+
+.sourceUrl a {
+    color: #7b7b7b;
+}
+a:visited {
+    color: #7b7b7b;
+}
+span {
+    font-size: 15px;
+    color: #7b7b7b;
+}
 #sound {
     cursor: pointer;
 }

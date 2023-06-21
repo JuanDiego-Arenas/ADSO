@@ -197,3 +197,94 @@ CREATE TABLE cliente(
 );
 
 
+-- Insertar datos para Colombia
+INSERT INTO cliente (empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende)
+VALUES
+    ('Ecopetrol', 'Juan', 'López', '1234567890', 'Calle Falsa 123, Bogotá', 'Cundinamarca', 'Colombia', 1),
+    ('Grupo Éxito', 'María', 'González', '2345678901', 'Avenida Principal 456, Medellín', 'Antioquia', 'Colombia', 2),
+    ('Bancolombia', 'Andrés', 'Rodríguez', '3456789012', 'Carrera Central 789, Cali', 'Valle del Cauca', 'Colombia', 3),
+    ('Postobón', 'Laura', 'Pérez', '4567890123', 'Calle Principal 987, Barranquilla', 'Atlántico', 'Colombia', 4),
+    ('Avianca', 'Carlos', 'Gómez', '5678901234', 'Avenida Central 654, Cartagena', 'Bolívar', 'Colombia', 5),
+    -- ... Agrega aquí más registros para Colombia
+
+    ('Grupo Aval', 'Sofía', 'Hernández', '6789012345', 'Carrera Principal 321, Bucaramanga', 'Santander', 'Colombia', 1),
+    ('Grupo Argos', 'Diego', 'Torres', '7890123456', 'Avenida Central 654, Santa Marta', 'Magdalena', 'Colombia', 2),
+    ('ISA', 'Valentina', 'Rojas', '8901234567', 'Calle Principal 987, Pereira', 'Risaralda', 'Colombia', 3),
+    ('Bancolombia', 'Luis', 'Ramírez', '9012345678', 'Avenida Central 654, Villavicencio', 'Meta', 'Colombia', 4),
+    ('Avianca', 'Ana', 'Sánchez', '0123456789', 'Carrera Principal 321, Manizales', 'Caldas', 'Colombia', 5);
+
+-- Insertar datos para Reino Unido
+INSERT INTO cliente (empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende)
+VALUES
+    ('British Airways', 'Michael', 'Johnson', '1122334455', '123 Fake Street, London', 'England', 'United Kingdom', 6),
+    ('BP', 'Sarah', 'Smith', '2233445566', '456 Main Avenue, Manchester', 'Lancashire', 'United Kingdom', 7),
+    ('HSBC', 'David', 'Williams', '3344556677', '789 Broad Road, Birmingham', 'West Midlands', 'United Kingdom', 8),
+    ('Vodafone', 'Emma', 'Brown', '4455667788', '987 High Street, Glasgow', 'Scotland', 'United Kingdom', 9),
+    ('Tesco', 'James', 'Taylor', '5566778899', '654 Elm Lane, Cardiff', 'Wales', 'United Kingdom', 10),
+    -- ... Agrega aquí más registros para Reino Unido
+
+    ('Jaguar Land Rover', 'Olivia', 'Davies', '6677889900', '321 Oak Close, Belfast', 'Northern Ireland', 'United Kingdom', 6),
+    ('Barclays', 'William', 'Wilson', '7788990011', '654 Pine Road, Edinburgh', 'Scotland', 'United Kingdom', 7),
+    ('Sainsbury\s', 'Sophie', 'Evans', '8899001122', '987 Maple Avenue, Liverpool', 'Merseyside', 'United Kingdom', 8),
+    ('Lloyds Banking Group', 'Daniel', 'Jones', '9900112233', '321 Elm Street, Bristol', 'England', 'United Kingdom', 9),
+    ('Virgin Atlantic', 'Emily', 'Clark', '0011223344', '654 Cedar Lane, Leeds', 'West Yorkshire', 'United Kingdom', 10);
+    -- Insertar datos adicionales para Colombia
+INSERT INTO cliente (empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende)
+VALUES
+    ('Grupo Nutresa', 'Isabella', 'Gómez', '2233445566', '123 Main Street, Bogotá', 'Cundinamarca', 'Colombia', 11),
+    ('Bancolombia', 'Sebastián', 'Hernández', '3344556677', '456 Elm Avenue, Medellín', 'Antioquia', 'Colombia', 12),
+    ('Alpina', 'Valentina', 'Ramírez', '4455667788', '789 Oak Road, Cali', 'Valle del Cauca', 'Colombia', 13),
+    ('Grupo Éxito', 'Matías', 'Torres', '5566778899', '987 Cedar Lane, Barranquilla', 'Atlántico', 'Colombia', 14),
+    ('Avianca', 'Julieta', 'Sánchez', '6677889900', '321 Maple Avenue, Cartagena', 'Bolívar', 'Colombia', 15),
+    -- ... Agrega aquí más registros para Colombia
+
+    ('Grupo Aval', 'Gabriel', 'Hernández', '7788990011', '654 Elm Street, Bucaramanga', 'Santander', 'Colombia', 16),
+    ('Grupo Argos', 'Lucía', 'González', '8899001122', '987 Pine Road, Santa Marta', 'Magdalena', 'Colombia', 17),
+    ('ISA', 'Benjamín', 'Rojas', '9900112233', '321 Cedar Lane, Pereira', 'Risaralda', 'Colombia', 18),
+    ('Bancolombia', 'Santiago', 'Ramírez', '0011223344', '654 Maple Avenue, Villavicencio', 'Meta', 'Colombia', 19),
+    ('Avianca', 'Camila', 'Sánchez', '1122334455', '987 Elm Street, Manizales', 'Caldas', 'Colombia', 20),
+    -- ... Agrega aquí más registros para Colombia
+
+    ('Grupo Nutresa', 'Isabella', 'Gómez', '2233445566', '123 Main Street, Bogotá', 'Cundinamarca', 'Colombia', 21),
+    ('Bancolombia', 'Sebastián', 'Hernández', '3344556677', '456 Elm Avenue, Medellín', 'Antioquia', 'Colombia', 22),
+    ('Alpina', 'Valentina', 'Ramírez', '4455667788', '789 Oak Road, Cali', 'Valle del Cauca', 'Colombia', 23),
+    ('Grupo Éxito', 'Matías', 'Torres', '5566778899', '987 Cedar Lane, Barranquilla', 'Atlántico', 'Colombia', 24),
+    ('Avianca', 'Julieta', 'Sánchez', '6677889900', '321 Maple Avenue, Cartagena', 'Bolívar', 'Colombia', 25),
+    -- ... Agrega aquí más registros para Colombia
+
+    ('Grupo Aval', 'Gabriel', 'Hernández', '7788990011', '654 Elm Street, Bucaramanga', 'Santander', 'Colombia', 26),
+    ('Grupo Argos', 'Lucía', 'González', '8899001122', '987 Pine Road, Santa Marta', 'Magdalena', 'Colombia', 27),
+    ('ISA', 'Benjamín', 'Rojas', '9900112233', '321 Cedar Lane, Pereira', 'Risaralda', 'Colombia', 28),
+    ('Bancolombia', 'Santiago', 'Ramírez', '0011223344', '654 Maple Avenue, Villavicencio', 'Meta', 'Colombia', 29),
+    ('Avianca', 'Camila', 'Sánchez', '1122334455', '987 Elm Street, Manizales', 'Caldas', 'Colombia', 30),
+    -- ... Agrega aquí más registros para Colombia
+
+-- Insertar datos adicionales para Reino Unido
+INSERT INTO cliente (empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende)
+VALUES
+    ('British Airways', 'Michael', 'Johnson', '2233445566', '123 Fake Street, London', 'England', 'United Kingdom', 31),
+    ('BP', 'Sarah', 'Smith', '3344556677', '456 Main Avenue, Manchester', 'Lancashire', 'United Kingdom', 32),
+    ('HSBC', 'David', 'Williams', '4455667788', '789 Broad Road, Birmingham', 'West Midlands', 'United Kingdom', 33),
+    ('Vodafone', 'Emma', 'Brown', '5566778899', '987 High Street, Glasgow', 'Scotland', 'United Kingdom', 34),
+    ('Tesco', 'James', 'Taylor', '6677889900', '321 Elm Lane, Cardiff', 'Wales', 'United Kingdom', 35),
+    -- ... Agrega aquí más registros para Reino Unido
+
+    ('Jaguar Land Rover', 'Olivia', 'Davies', '7788990011', '654 Oak Close, Belfast', 'Northern Ireland', 'United Kingdom', 36),
+    ('Barclays', 'William', 'Wilson', '8899001122', '987 Elm Road, Edinburgh', 'Scotland', 'United Kingdom', 37),
+    ('Sainsbury\s', 'Sophie', 'Evans', '9900112233', '321 Maple Avenue, Liverpool', 'Merseyside', 'United Kingdom', 38),
+    ('Lloyds Banking Group', 'Daniel', 'Jones', '0011223344', '654 Pine Street, Bristol', 'England', 'United Kingdom', 39),
+    ('Virgin Atlantic', 'Emily', 'Clark', '1122334455', '987 Cedar Lane, Leeds', 'West Yorkshire', 'United Kingdom', 40),
+    -- ... Agrega aquí más registros para Reino Unido
+
+    ('British Airways', 'Michael', 'Johnson', '2233445566', '123 Fake Street, London', 'England', 'United Kingdom', 41),
+    ('BP', 'Sarah', 'Smith', '3344556677', '456 Main Avenue, Manchester', 'Lancashire', 'United Kingdom', 42),
+    ('HSBC', 'David', 'Williams', '4455667788', '789 Broad Road, Birmingham', 'West Midlands', 'United Kingdom', 43),
+    ('Vodafone', 'Emma', 'Brown', '5566778899', '987 High Street, Glasgow', 'Scotland', 'United Kingdom', 44),
+    ('Tesco', 'James', 'Taylor', '6677889900', '321 Elm Lane, Cardiff', 'Wales', 'United Kingdom', 45),
+    -- ... Agrega aquí más registros para Reino Unido
+
+    ('Jaguar Land Rover', 'Olivia', 'Davies', '7788990011', '654 Oak Close, Belfast', 'Northern Ireland', 'United Kingdom', 46),
+    ('Barclays', 'William', 'Wilson', '8899001122', '987 Elm Road, Edinburgh', 'Scotland', 'United Kingdom', 47),
+    ('Sainsbury\s', 'Sophie', 'Evans', '9900112233', '321 Maple Avenue, Liverpool', 'Merseyside', 'United Kingdom', 48),
+    ('Lloyds Banking Group', 'Daniel', 'Jones', '0011223344', '654 Pine Street, Bristol', 'England', 'United Kingdom', 49),
+    ('Virgin Atlantic', 'Emily', 'Clark', '1122334455', '987 Cedar Lane, Leeds', 'West Yorkshire', 'United Kingdom', 50);

@@ -8,13 +8,29 @@
 </head>
 <body>
     <div class="container">
-        <form action="">
-            <input class="input" type="text" placeholder="Name" required >
-            <input class="input" type="text" placeholder="Last Name" required >
-            <input class="input" type="number" placeholder="Phone" required >
-            <input class="input" type="email" placeholder="Email" required >
-            <input class="input" type="password" placeholder="password" required >
-            <input class="button" type="submit">
+        <form class="form">
+            <h1>Form...</h1>
+            <div class="input-group">
+                <input type="text" required><span class="bar"></span>
+                <label>Name</label>
+            </div>
+            <div class="input-group">
+                <input type="number" required><span class="bar"></span>
+                <label>Phone</label>
+            </div>
+            <div class="input-group">
+                <input type="text" required><span class="bar"></span>
+                <label>Email</label>
+            </div>
+            <div class="input-group">
+                <input type="password" required><span class="bar"></span>
+                <label>Password</label>
+            </div>
+            <div class="input-group">
+                <input type="password" required><span class="bar"></span>
+                <label>Confirm Password</label>
+            </div>
+            <button class="button" type="submit">Send</button>
         </form>
     </div>
 

@@ -1,50 +1,122 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700;800&display=swap');
 
 * {
     font-family: 'Ubuntu', sans-serif;
     margin: 0;    
     padding: 0;
+    box-sizing: border-box;
 }
 
-.container{display: flex;
+body {
+    background: linear-gradient(to right, #3F5EFB, #FC466B);
+}
+
+:root {
+    --textColors: #49454567;
+}
+
+/* ---------- Container ---------- */
+.container{
     height: 100vh;
-    justify-content: center;
-    align-items: center;
-}
-
-form {
     display: flex;
-    flex-direction: column;
-    gap: 1.4rem;
     justify-content: center;
     align-items: center;
-    border: 3px solid rgba(58, 59, 59, 0.445);
-    border-radius: 20px;
-    background-color: #f8fafcf8;
-    padding: 4rem;
-}
-input {
-    font-size: 18px;
-    height: 2rem;
-    outline: none;
-    border: none;
-    border-bottom: 2px solid #7979795b;
-    width: fit-content;
-    position: relative;
-    background-color: transparent;
 }
 
-input.button{
+
+/* --------- Formulario --------- */
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* gap: 1.9rem; */
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 6px #ffffffcc;
+    padding: 3rem 6rem;
+}
+
+/* ---------- Inputs ---------- */
+.input-group {
+    position: relative;
+    top: 50%;
+    font-size: 21px;
+    margin: 20px 0;
+}
+
+.input-group input {
+    width: 300px;
+    height: 40px;
+    font-size: 21px;
+    border: none;
+    padding: 0 10px;
+    border-bottom: 2px solid var(--textColors);
+    background: none;
+    outline: none;
+
+}
+
+
+/* ---------- Labels ---------- */
+.input-group label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 21px;
+    color: var(--textColors);
+    padding: 0 5px;
+    pointer-events: none;
+    transition: 300ms;
+}
+
+.input-group input:focus~label,
+.input-group input:valid~label {
+    top: -4px;
+    font-size: 14px;
+}
+
+/* ---------- Bar ---------- */
+.input-group .bar {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+ .bar::before{
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, #00f260, #0575e6);
+    transition: 400ms;
+    left: 0%;
+}
+
+.input-group input:focus~.bar::before {
+    width: 100%;
+}
+
+/* ---------- Boton ---------- */
+.form .button{
+    font-size: 21px;
     cursor: pointer;
     border: none;
-    background-color: #68a063;
-    width: 5rem;
+    border-radius: 10px;
+    background: linear-gradient(to right, #fc5c7d, #6a82fb);
+    width: 6rem;
     height: 2.5rem;
     margin-top: 1rem;
 }
 
-input:focus{
-    transition: 0.6s;
-    width: 100%;
-    border-bottom: 2px solid #68a063;
+.form .button:active {
+    /* background-color: #3c873a; */
+    background: linear-gradient(to right, #fc466b, #3f5efb);
+}
+
+.form .button:hover {
+    box-shadow: 0 0 15px -1px #68a063;
 }

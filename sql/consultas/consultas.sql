@@ -13,7 +13,9 @@
   email VARCHAR(50) NOT NULL,
   id_rol ENUM('Aprendiz', 'Instructor', 'Administrador') NOT NULL
 );
- INSERT INTO usuarios (id, nombre, email, id_rol) VALUES
+
+ INSERT INTO usuarios (id, nombre, email, id_rol)
+ VALUES
   (1, 'Juan Perez', 'juan.perez@example.com', 1),
   (2, 'Maria Garcia', 'maria.garcia@example.com', 2),
   (3, 'Pedro Rodriguez', 'pedro.rodriguez@example.com', 3);

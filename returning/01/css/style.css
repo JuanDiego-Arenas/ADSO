@@ -55,8 +55,16 @@ body {
     border-bottom: 2px solid var(--textColors);
     background: none;
     outline: none;
-
 }
+
+/* ---------- Validación Inputs ---------- */
+.input-group-correct {
+    color: #bb2929;
+    border: none;
+    /* border-bottom: 2px solid #bb2929; */
+    margin: 0;
+}
+
 
 
 /* ---------- Labels ---------- */
@@ -94,6 +102,14 @@ body {
     background: linear-gradient(to right, #00f260, #0575e6);
     transition: 400ms;
     left: 0%;
+}
+
+.bar-incorrect::before{
+    background: #bb2929;
+}
+.bar-incorrect{
+    color: #bb2929;
+    
 }
 
 .input-group input:focus~.bar::before {

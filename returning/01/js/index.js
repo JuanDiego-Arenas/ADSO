@@ -15,7 +15,7 @@ const verifyForm = (e) => {
             if(expresiones.user.test(e.target.value)){
 
             } else {
-                document
+                document.getElementById('user-group');
             }
             break;
     

@@ -1,24 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temporizador</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <div class="container">
         <div class="container temporizador">
             <div class="time">
-                00:00
+                <div class="hours" id="">00</div>
+                <div class="minutes" id="">:00</div>
+                <div class="seconds" id="">:00</div>
+                <div class="hundredths" id="">:00</div>
             </div>
+
             <div class="button">
-                <div disabled><i class="fa-regular fa-circle-pause pause"></i></div>
-                <div><i class="fa-regular fa-circle-play play"></i></div>
-                <di><i class="fa-regular fa-circle-stop stop"></i></div>
+                <button class="pause disabled" onclick="pause();" disabled>
+                    <i class="fa-solid fa-pause"></i>
+                    <!-- <img src="./icons/pause.png" alt=""> -->
+                </button>
+
+                <button class="play" onclick="start();">
+                    <i class="fa-solid fa-play"></i>
+                    <!-- <img src="./icons/start.png" alt=""> -->
+                </button>
+
+                <button class="stop disabled" onclick="restart();" disabled>
+                    <i class="fa-solid fa-stop"></i>
+                    <!-- <img src="./icons/delete.png" alt=""> -->
+                </button>
             </div>
         </div>
     </div>
+    <script src="./js/index.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400;500;600&display=swap');
+
+* {
+    font-family: 'Tektur', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    height: 100vh;
+    /* background: linear-gradient(to top, #ffd89b, #19547b); */
+    background-color: #ff7700;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23cc0000' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23aa0000' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23d6002b' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23b10022' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23d9004b' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23b2003d' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23d3006c' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23ac0057' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23c4008c' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%239e0071' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23aa00aa' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23880088' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    /* margin: auto; */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    /* width: 100vw; */
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/** ---------- Nav ---------- */
+.nav ul {
+    list-style: none;
+    position: relative;
+    top: 120px;
+    /* right: 35.5px; */
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+    background-color: #191825;
+}
+
+.nav ul li {
+    position: relative;
+    /* float: none; */
+    margin: 0;
+    padding: 0;
+    background: #191825;
+}
+
+.nav ul li:hover {
+    background: #7A316F;
+}
+
+.nav ul a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav ul ul {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    background: #eee;
+    padding: 0;
+}
+
+.nav ul ul li {
+    float: none;
+    width: 120px;
+    border-radius: 0px;
+}
+
+.nav ul li:hover>ul {
+    display: block;
+}
+
+/** ---------- Menu ---------- */
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 30px;
+    padding: 5px;
+    position: absolute;
+    transition: 200ms;
+}
+
+.menu:active {
+    color: #fff;
+}
+
+.menu:hover {
+    box-shadow: 0 0 35px #0000008c;
+    background-color: #191825;
+    color: #fff;
+}

@@ -21,7 +21,8 @@ const derecha = () => {
 		contador = 0;
         console.log(contador);
 	}
-	imagenes.style.background = `url(img/${imgMuestra[contador]}.jpg)`;
+	console.log(imgMuestra[contador]);
+	// imagenes.style.background = `url(img/${imgMuestra[contador]}.jpg)`;
 	style();
     
 };

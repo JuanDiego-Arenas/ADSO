@@ -1,22 +1,11 @@
-const saludo = () => {
-	return 'Hello Word!!!';
-};
-
 const user = {
-	nombre: 'Jimmy',
-	apellido: 'Lombana',
-	edad: 30,
-	direccion: {
-		pais: 'Colombia',
-		departamento: 'Huila',
-		ciudad: 'Garzon',
-	},
-	amigos: ['Morocho', 'Karol', 'Polo'],
-	active: true,
-	enviarMail: function () {
-		return 'Enviando Correo...';
-	},
+	nombre: 'Oscar',
+	edad: 23
+}
+
+const infoUser = (user) => {
+	const {nombre, edad} = user;
+	return `<h1>Hola ${nombre}</h1>`
 };
 
-
-console.log(user.enviarMail());
+document.body.innerHTML = infoUser(user);

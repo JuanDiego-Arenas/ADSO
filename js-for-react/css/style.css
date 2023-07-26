@@ -8,15 +8,15 @@
 }
 
 body {
-    background: linear-gradient(to bottom, #c31432, #240b36);
-    color: #deedf7;
-  
-}
-
-h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 48px;
+    background: linear-gradient(to bottom, #c31432, #240b36);
+    color: #deedf7;
     height: 100vh;
+}
+
+h1 {
+    font-size: 48px;
+    /* height: 100vh; */
 }

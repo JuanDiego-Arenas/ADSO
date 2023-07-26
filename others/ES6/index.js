@@ -134,13 +134,13 @@ function com12(str121, str122) {
 
 console.log(com12("HOLA MUNDO", "hola mundo    "));
 
-// // ---------------------------------------------------------
+// // -------------------------------------------------------
 
 function filtro(arr13, clave13) {
     return arr13.filter((obj) => obj.hasOwnProperty(clave13));
 }
 const arr = [
-    { name: "Juan" },
+    { name: "Juan Diego" },
     { age: 20 },
     { name: "Diego", email: "arenas@gmail.com" },
 ];
@@ -148,7 +148,7 @@ const arr = [
 const resultado = filtro(arr, "name");
 console.log(resultado);
 
-// // ---------------------------------------------------------
+// // ----------------------------------------------------------
 
 function par13(arr13) {
 	for (let i = 0; i < arr.length; i++) {

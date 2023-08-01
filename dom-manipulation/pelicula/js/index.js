@@ -13,20 +13,18 @@ const mostrarDatos = () => {
 		],
 	};
 
-	console.log(films.actores[1]);
+	// console.log(films.actores[1]);
 	const actores = () => {
 		for (let i = 0; i < films.actores.length; i++) {
+			// actor.appendChild(newElement);
 			newElement.textContent = films.actores[i];
-			actor.appendChild(newElement);
 		}
 	};
 
-	return (parrafo.innerHTML = `
+	return (parrafo.createElement = `
         <h1>Pelicula: <strong>${films.nombre}</strong></h1>
         <ul>
-
-            ${actores()}
-           
+			${console.log(actores())}
         </ul>
     `);
 };

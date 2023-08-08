@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400;500;600&display=swap');
+
+/** ---------- Style ---------- */
+* {
+    font-family: 'Tektur', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/** ---------- Board ---------- */
+.main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 850px;
+}
+
+/*? ----- Figure ----- */
+
+.main figure,
+.main figure img {
+    display: inline-block;
+    /* width: 100%; */
+}
+
+.main figure {
+    margin: 0;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: perspective(900px) rotateY(0deg);
+    cursor: pointer;
+    transition: all ease 600ms;
+}
+
+.main figure::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    transition: all ease 300ms;
+}
+
+.main figure:hover:after {
+    background-color: #ffffff34;
+}
+
+.main figure.opened {
+    transform: perspective(900px) rotateY(180deg);
+
+}
+
+.main figure .back {
+    display: block;
+    backface-visibility: hidden;
+}
+
+.main .front-image {
+    position: absolute;
+    top: 0;
+    transform: perspective(900px) rotateY(180deg);
+    backface-visibility: hidden;
+}

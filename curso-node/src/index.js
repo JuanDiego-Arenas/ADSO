@@ -14,3 +14,4 @@ app.use(express.static(join(__dirname, 'public')));
 
 app.listen(3000);
 console.log('Server running in port', 3000);
+console.log('http://localhost:3000/');

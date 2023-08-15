@@ -3,7 +3,7 @@ Portfolio/.vscode
 .DS_Store
 better-comments.png
 
-.yarn
+.yarn/*
 !.yarn/patches
 !.yarn/plugins
 !.yarn/releases

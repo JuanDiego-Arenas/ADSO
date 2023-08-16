@@ -8,7 +8,8 @@
 </head>
 <body>
     <%- include ('partials/navigation.ejs') %>
-    <div class="container vh-100 pt-2 text-center d-flex justify-content-center align-items-center">
+
+    <div class="container vh-100 d-flex justify-content-center align-items-center">
         <div class="card bg-dark text-white text-center">
             <div class="card-header">
                 <h3>Contact me</h3>
@@ -17,12 +18,20 @@
                 <form>
                     <div class="mb-3">
                         <label for="email">Email</label>
-                        <input type="email" placeholder="">
+                        <input type="email" placeholder="Escribe tu Email" class="form-control">
                     </div>
+                    <div class="mb-3">
+                        <label for="email">Mensaje</label>
+                        <textarea name="Mensaje" rows="3" class="form-control" placeholder="Escribe tu mensaje"></textarea>
+                    </div>
+                    <button class="btn btn-primary btn-block">
+                        Enviar
+                    </button>
                 </form>
             </div>
         </div>
     </div>
+
     <%- include ('partials/footer.ejs') %>
 </body>
 </html>

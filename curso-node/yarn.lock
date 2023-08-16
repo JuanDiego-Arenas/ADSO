@@ -393,6 +393,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "curso-node@workspace:."
   dependencies:
+    dotenv: "npm:^16.3.1"
     ejs: "npm:^3.1.9"
     express: "npm:^4.18.2"
     morgan: "npm:^1.10.0"
@@ -448,6 +449,13 @@ __metadata:
   version: 1.2.0
   resolution: "destroy@npm:1.2.0"
   checksum: bd7633942f57418f5a3b80d5cb53898127bcf53e24cdf5d5f4396be471417671f0fee48a4ebe9a1e9defbde2a31280011af58a57e090ff822f589b443ed4e643
+  languageName: node
+  linkType: hard
+
+"dotenv@npm:^16.3.1":
+  version: 16.3.1
+  resolution: "dotenv@npm:16.3.1"
+  checksum: b95ff1bbe624ead85a3cd70dbd827e8e06d5f05f716f2d0cbc476532d54c7c9469c3bc4dd93ea519f6ad711cb522c00ac9a62b6eb340d5affae8008facc3fbd7
   languageName: node
   linkType: hard
 

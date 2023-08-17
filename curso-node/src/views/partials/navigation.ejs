@@ -8,7 +8,18 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto">
                 <a class="nav-link" href="/">Home</a>
-                <a class="nav-link" href="/about">About</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        About
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" style="background-color: #3d4352">
+                        <a class="dropdown-item" href="/about">Quiénes somos</a>
+                        <a class="dropdown-item" href="/mision">Misión</a>
+                        <a class="dropdown-item" href="/vision">Visión</a>
+                    </ul>
+                </li>
+                <a class="nav-link" href="/services">Servicios</a>
                 <a class="nav-link" href="/contact">Contact</a>
             </div>
         </div>

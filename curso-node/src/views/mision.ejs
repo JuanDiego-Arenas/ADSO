@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include ('partials/head.ejs') %>
+        <title>
+            <%= title%>
+        </title>
+</head>
+
+<body>
+    <%- include ('partials/navigation.ejs') %>
+        <section>
+            <main class="container vh-100 pt-2 text-center d-flex justify-content-center align-items-center">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <h1>Misión</h1>
+                    <p class="w-50">
+                        Nuestra misión es ofrecer soluciones tecnológicas innovadoras que impulsen el
+                        crecimiento y la transformación digital de nuestros clientes. Nos comprometemos a
+                        brindar productos y servicios de calidad que satisfagan las necesidades de manera
+                        efectiva y eficiente.
+                    </p>
+                    <div class="d-flex gap-5">
+                        <a href="/vision" class="btn btn-primary">Visión</a>
+                    </div>
+                </div>
+            </main>
+        </section>
+        <%- include ('partials/footer.ejs') %>
+</body>
+
+</html>

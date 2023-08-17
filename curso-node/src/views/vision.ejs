@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include ('partials/head.ejs') %>
+        <title>
+            <%= title%>
+        </title>
+</head>
+
+<body>
+    <%- include ('partials/navigation.ejs') %>
+        <section>
+            <main class="container vh-100 pt-2 text-center d-flex justify-content-center align-items-center">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <h1>Visión</h1>
+                    <p class="w-50">
+                        Ser reconocidos como líderes en el sector tecnológico, destacando por nuestra
+                        excelencia en la entrega de soluciones personalizadas y nuestra capacidad para
+                        adaptarnos y abrazar las últimas tendencias tecnológicas. Aspiramos a establecer
+                        relaciones duraderas con nuestros clientes, basadas en la confianza y el éxito mutuo.
+                    </p>
+                    <div class="d-flex gap-5">
+                        <a href="/mision" class="btn btn-primary">Misión</a>
+                    </div>
+                </div>
+            </main>
+        </section>
+        <%- include ('partials/footer.ejs') %>
+</body>
+
+</html>

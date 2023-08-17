@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include ('partials/head.ejs') %>
+        <title>
+            <%= title%>
+        </title>
+</head>
+
+<body>
+    <%- include ('partials/navigation.ejs') %>
+        <section>
+            <main class="container vh-100 pt-2 text-center d-flex justify-content-center align-items-center">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <h1>Servicios</h1>
+                    <p class="w-75">
+                        En InnovateTech Solutions, ofrecemos una amplia gama de servicios
+                        tecnológicos diseñados para satisfacer tus necesidades específicas. Desde el desarrollo
+                        de aplicaciones web y móviles hasta el diseño de interfaces de usuario, estamos
+                        preparados para enfrentar cualquier desafío tecnológico.
+                    </p>
+
+                    <ul class="list-group text-center">
+                        <li class="list-group-item active">
+                            Nuestros servicios incluyen
+                        </li>
+                        <li class="list-group-item">Desarrollo de software a medida</li>
+                        <li class="list-group-item">Diseño y desarrollo web</li>
+                        <li class="list-group-item">Desarrollo de aplicaciones móviles</li>
+                        <li class="list-group-item disabled" aria-disabled="true">Consultoría tecnológica</li>
+                        <li class="list-group-item">Integración de sistemas</li>
+                        <li class="list-group-item">Diseño de interfaces de usuario (UI/UX)</li>
+                        <li class="list-group-item">Servicios de análisis de datos</li>
+                        <li class="list-group-item">Seguridad y protección de datos</li>
+                    </ul>
+
+                    <p>
+                    • Desarrollo de software a medida
+                    • Diseño y desarrollo web
+                    • Desarrollo de aplicaciones móviles
+                    • Consultoría tecnológica
+                    • Integración de sistemas
+                    • Diseño de interfaces de usuario (UI/UX)
+                    • Servicios de análisis de datos
+                    • Seguridad y protección de datos</p>
+                </div>
+            </main>
+        </section>
+        <%- include ('partials/footer.ejs') %>
+</body>
+
+</html>

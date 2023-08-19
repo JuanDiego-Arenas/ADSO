@@ -9,10 +9,14 @@
 <body>
     <%- include ('partials/navigation.ejs') %>
     <header class="container vh-100 d-flex justify-content-center align-items-center">
-        <div class="d-flex flex-column justify-content-center align-items-center p-4">
-            <img src="../img/anteiku.png" alt="Logo" class="img-fluid w-50">
-            <h1 class="display-1 my-5 text-uppercase text-center fw-bold">Node.js App</h1>
-            <a href="/about" class="btn btn-primary">About</a>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="d-flex flex-column justify-content-center align-items-center p-4 text-justify">
+                    <img src="../img/anteiku.png" alt="Logo" class="img-fluid w-50">
+                    <h1 class="display-1 my-5 text-uppercase  fw-bold">Node.js App</h1>
+                    <a href="/about" class="btn btn-primary">About</a>
+                </div>
+            </div>
         </div>
     </header>
     <%- include ('partials/footer.ejs') %>

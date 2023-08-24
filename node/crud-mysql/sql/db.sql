@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS crud_mysql;
+
+USE crud_mysql;
+
+CREATE TABLE employees (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name_employee VARCHAR(255) DEFAULT NULL,
+    salary INT(6) DEFAULT NULL
+)

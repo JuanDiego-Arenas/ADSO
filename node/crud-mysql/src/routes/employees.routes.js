@@ -4,8 +4,11 @@ import * as employeesCtrl from '../controllers/employees.controller.js';
 const router = Router();
 
 router.get('/employees',employeesCtrl.getEmployees);
-router.post('/employees', employeesCtrl.createEmployees);
-router.patch('/employees', employeesCtrl.updateEmployees);
-router.delete('/employees', employeesCtrl.deleteEmployees);
+
+router.get('/employees/:id',employeesCtrl.getEmployee);
+
+router.post('/employees', employeesCtrl.createEmployee);
+router.patch('/employees/:id', employeesCtrl.updateEmployee);
+router.delete('/employees/:id', employeesCtrl.deleteEmployee);
 
 export default router;

@@ -1,12 +1,6 @@
-import express from 'express';
-import employeesRoutes from './routes/employees.routes.js';
-import indexRoutes from './routes/index.routes.js';
+import app from './app.js'
+import { PORT } from './config.js';
 
-const app = express();
-
-app.use(employeesRoutes);
-app.use(indexRoutes);
-
-app.listen(process.env.PORT || 3000);
-console.log('Server running on port', process.env.PORT || 3000);
+app.listen(PORT);
+console.log('Server running on port', PORT);
 console.log('http://localhost:3000/employees');

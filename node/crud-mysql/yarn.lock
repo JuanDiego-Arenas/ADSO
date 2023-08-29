@@ -367,6 +367,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "crud-mysql@workspace:."
   dependencies:
+    dotenv: "npm:^16.3.1"
     express: "npm:^4.18.2"
     mysql2: "npm:^3.6.0"
     nodemon: "npm:^3.0.1"
@@ -428,6 +429,13 @@ __metadata:
   version: 1.2.0
   resolution: "destroy@npm:1.2.0"
   checksum: 0acb300b7478a08b92d810ab229d5afe0d2f4399272045ab22affa0d99dbaf12637659411530a6fcd597a9bdac718fc94373a61a95b4651bbc7b83684a565e38
+  languageName: node
+  linkType: hard
+
+"dotenv@npm:^16.3.1":
+  version: 16.3.1
+  resolution: "dotenv@npm:16.3.1"
+  checksum: dbb778237ef8750e9e3cd1473d3c8eaa9cc3600e33a75c0e36415d0fa0848197f56c3800f77924c70e7828f0b03896818cd52f785b07b9ad4d88dba73fbba83f
   languageName: node
   linkType: hard
 

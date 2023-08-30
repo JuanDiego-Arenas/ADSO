@@ -29,4 +29,17 @@
             return $this->edad;
         }
     }
+
+    //* <----- Instancia ----->
+    $estudiante = new Estudiante("María", 20);
+
+    $estudiante->agregarAsignatura("Matemáticas");
+    $estudiante->agregarAsignatura("Historia");
+    $estudiante->agregarAsignatura("Ciencias");
+
+    echo "Nombre: " . $estudiante->getNombre() . ", Edad: " . $estudiante->getEdad() . "\n";
+    echo "Asignaturas inscritas: " . implode(", ", $estudiante->mostrarAsignaturas()) . "\n";
+
+    // Nombre: María, Edad: 20
+    // Asignaturas inscritas: Matemáticas, Historia, Ciencia   
 ?>

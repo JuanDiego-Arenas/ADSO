@@ -32,11 +32,9 @@
             if ($monto > 0 && $monto <= $this->saldo) {
                 $this->saldo -= $monto;
                 return true;
-                echo "\nSaldo después de retirar ($200) : $" . $cuenta->getSaldo() . "\n";
-                echo "\e[1;31m Database is stopped...🔥🔴";
             } else {
                 //! De lo contrario le dará error
-                // echo "\nSaldo insuficiente ⚠️\n";
+                echo "\nSaldo insuficiente ⚠️\n";
                 return false;
             }
         }
@@ -47,8 +45,13 @@
     echo "Saldo actual: $" . $cuenta->getSaldo() . "\n";  // Muestra el saldo inicial
 
     $cuenta->depositar(500);
-    // echo "\nSaldo después de depositar ($500) : $" . $cuenta->getSaldo();
+    echo "\nSaldo después de depositar ($500) : $" . $cuenta->getSaldo();
 
     $cuenta->retirar(200);
-    // echo "\nSaldo después de retirar ($200) : $" . $cuenta->getSaldo() . "\n";
+    echo "\nSaldo después de retirar ($200) : $" . $cuenta->getSaldo() . "\n";
+    //? Salida:
+    // Saldo actual: $1000
+
+    // Saldo después de depositar ($500) : $1500
+    // Saldo después de retirar ($200) : $1300
 ?>

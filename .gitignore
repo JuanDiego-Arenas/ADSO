@@ -2,7 +2,7 @@
 .vscode
 .DS_Store
 
-*/.yarn/*
+.yarn/*
 .yarn/
 */!.yarn/patches
 */!.yarn/plugins

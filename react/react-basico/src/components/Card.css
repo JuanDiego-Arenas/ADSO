@@ -1,0 +1,33 @@
+.Card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px #cecece6e;
+    background-color: slateblue;
+    padding: 10px;
+    gap: 10px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.showHide {
+    margin: 20px 0 20px 0;
+}
+
+.hocks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+

@@ -23,11 +23,11 @@ const register = (req, res) => {
 
 		user.password = hashPassword;
 
-		user.save((error, userStorage) => {
+		user.save((error, userStore) => {
 			if (error) {
 				res.status(400).send({ msg: 'Error al crear el usuario' });
 			} else {
-				res.status(200).send({ userStorage });
+				res.status(200).send({ userStore: userStore });
 			}
 		});
 
@@ -43,17 +43,36 @@ const register = (req, res) => {
 const login = (req, res) => {
 	const { email, password } = req.body;
 	if (!email) res.status(400).send({ msg: 'El Email es obligatorio' });
-	if (!password)
-		res.status(400).send({ msg: 'La Contraseña es obligatoria' });
+	if (!password) res.status(400).send({ msg: 'La Contraseña es obligatoria' });
 
 	const emailLowerCase = email.toLowerCase();
 
-	User.findOne({ email: emailLowerCase }, (error, userStorage) => {
+	User.findOne({ email: emailLowerCase }, (error, userStore) => {
 		if (error) {
 			res.status(500).send({ msg: 'Error del servidor' });
 		} else {
-			console.log('password: ', password);
-			console.log(userStorage);
+			bcrypt.compare(
+				password,
+				userStore.password,
+				(bcryptError, check) => {
+					if (bcryptError) {
+						res.status(500).send({ msg: 'Error del servidor' });
+					} else if (!check) {
+						res.status(400).send({
+							msg: 'Usuario o Contraseña incorrectos',
+						});
+					} else if (!userStore.active) {
+						res.status(401).send({
+							msg: 'Usuario no autorizado o inactivo',
+						});
+					} else {
+						res.status(200).send({
+							access: jwt.createAccessToken(userStore),
+							refresh: jwt.createRefreshToken(userStore),
+						});
+					}
+				}
+			);
 		}
 	});
 };

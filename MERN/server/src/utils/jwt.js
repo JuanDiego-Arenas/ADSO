@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken');
-const JWT_SECRET_KEY = require('../constants.js');
+const { JWT_SECRET_KEY } = require('../constants.js');
 
 const createAccessToken = user => {
 	const expirationToken = new Date();
@@ -12,6 +12,7 @@ const createAccessToken = user => {
 		exp: expirationToken.getTime(),
 	};
 
+	console.log('JWT_SECRET_KEY:', JWT_SECRET_KEY);
 	return jwt.sign(payload, JWT_SECRET_KEY);
 };
 

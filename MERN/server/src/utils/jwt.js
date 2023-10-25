@@ -12,13 +12,13 @@ const createAccessToken = user => {
 		exp: expirationToken.getTime(),
 	};
 
-	console.log('JWT_SECRET_KEY:', JWT_SECRET_KEY);
+	// console.log('JWT_SECRET_KEY:', JWT_SECRET_KEY);
 	return jwt.sign(payload, JWT_SECRET_KEY);
 };
 
 const createRefreshToken = user => {
 	const expirationToken = new Date();
-	expirationToken.getMonth(expirationToken.getMonth() + 1);
+	expirationToken.setMonth(expirationToken.getMonth() + 1);
 
 	const payload = {
 		token_type: 'refresh',

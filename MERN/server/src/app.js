@@ -8,6 +8,7 @@ const app = express();
 
 // Importación de rutas
 const authRoutes = require('./routes/auth.routes.js');
+const userRoutes = require('./routes/user.routes.js');
 
 // Configurar body Parse
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -21,5 +22,6 @@ app.use(cors());
 
 // Configurar Rutas
 app.use(`/api/${API_VERSION}`, authRoutes);
+app.use(`/api/${API_VERSION}`, userRoutes);
 
 module.exports = app;

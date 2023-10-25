@@ -1,19 +1,20 @@
 {
-  "name": "server",
-  "packageManager": "yarn@4.0.0-rc.53",
-  "scripts": {
-    "start": "node ./src/index.js",
-    "dev": "nodemon ./src/index.js"
-  },
-  "dependencies": {
-    "bcryptjs": "^2.4.3",
-    "body-parser": "^1.20.0",
-    "cors": "^2.8.5",
-    "express": "^4.18.2",
-    "jsonwebtoken": "^9.0.2",
-    "mongoose": "^6.6.1"
-  },
-  "devDependencies": {
-    "nodemon": "^3.0.1"
-  }
+	"name": "server",
+	"packageManager": "yarn@4.0.0",
+	"scripts": {
+		"start": "node ./src/index.js",
+		"dev": "nodemon ./src/index.js"
+	},
+	"dependencies": {
+		"bcryptjs": "^2.4.3",
+		"body-parser": "^1.20.0",
+		"connect-multiparty": "^2.2.0",
+		"cors": "^2.8.5",
+		"express": "^4.18.2",
+		"jsonwebtoken": "^9.0.2",
+		"mongoose": "^6.6.1"
+	},
+	"devDependencies": {
+		"nodemon": "^3.0.1"
+	}
 }

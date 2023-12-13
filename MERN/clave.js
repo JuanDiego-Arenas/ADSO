@@ -5,4 +5,7 @@ const generateSecretKey = () => {
 	return crypto.randomBytes(64).toString('hex');
 };
 
-console.log(generateSecretKey());
+const secret = crypto.randomBytes(32).toString('hex');
+console.log(secret);
+
+// console.log(generateSecretKey());
